@@ -1,0 +1,754 @@
+{
+  "Odoo __manifest__": {
+    "prefix": "oi-manifest",
+    "body": [
+      "# -*- coding: utf-8 -*-",
+      "{",
+      "   'name': 'Module Name',",
+      "   'name_vi_VN': '',",
+      "   'summary': 'Summary',",
+      "   'description': 'Description',",
+      "   'author': 'Bùi Đức Tuấn',",
+      "   'maintainer': 'Bùi Đức Tuấn',",
+      "   'license': 'OPL-1',",
+      "   'website': 'https://xyz.com.vn',",
+      "   'category': 'LRT/Management',",
+      "   'version': '17.0.1.0.1',",
+      "   'depends': [],",
+      "   'installable': True,",
+      "   'application': False,",
+      "   'auto_install': False,",
+      "   'price': 0,",
+      "   'currency': 'USD',",
+      "   'data': [",
+      "   #============================================================================================================",
+      "   # DATA",
+      "",
+      "   #============================================================================================================",
+      "   # GROUP - SECURITY SETTING - PROFILE",
+      "",
+      "   #============================================================================================================",
+      "   # WIZARD",
+      "   #============================================================================================================",
+      "   # VIEWS",
+      "",
+      "   #============================================================================================================",
+      "   # REPORT",
+      "",
+      "   #============================================================================================================",
+      "   # MENU - ACTION",
+      "",
+      "   #============================================================================================================",
+      "   # FUNCTION USE TO UPDATE DATA LIKE POST OBJECT",
+      "   #============================================================================================================",
+      "],",
+      "   'pre_init_hook': None,",
+      "   'post_init_hook': None,",
+      "   'uninstall_hook': None,",
+      "   'external_dependencies': {'python': []},",
+      "   'assets': {",
+      "       'web.assets_backend': [],",
+      "       'web.assets_common': [],",
+      "       'web.qunit_suite_tests': [],",
+      "    }",
+      "}"
+    ]
+  },
+  "Odoo __init__": {
+    "prefix": "oi-init",
+    "body": [
+      "# -*- coding: utf-8 -*-",
+      "from . import models",
+      "from . import controllers"
+    ]
+  },
+  "Odoo ModelClass": {
+    "prefix": "oi-model",
+    "body": [
+      "# -*- coding: utf-8 -*-",
+      "# 1 : imports of python lib",
+      "import base64",
+      "import re",
+      "import time",
+      "from datetime import datetime",
+      "# 2 : imports of odoo",
+      "import odoo",
+      "from odoo import api, fields, models, _ # alphabetically ordered",
+      "from odoo.tools.safe_eval import safe_eval as eval",
+      "# 3 : imports from odoo addons",
+      "from odoo.addons.web.controllers.main import login_redirect",
+      "from odoo.addons.website.models.website import slug",
+      "class ${0: MyClass(models.Model):",
+      "    _inherit = 'my.class'",
+      "    _name = 'my.class'",
+      "    _description = 'My Class'",
+      "    _auto= True",
+    ]
+  },
+  "Odoo TransientClass": {
+    "prefix": "oi-transient",
+    "body": [
+      "# -*- coding: utf-8 -*-",
+      "# 1 : imports of python lib",
+      "import base64",
+      "import re",
+      "import time",
+      "from datetime import datetime",
+      "# 2 : imports of odoo",
+      "import odoo",
+      "from odoo import api, fields, models, _ # alphabetically ordered",
+      "from odoo.tools.safe_eval import safe_eval as eval",
+      "# 3 : imports from odoo addons",
+      "from odoo.addons.web.controllers.main import login_redirect",
+      "from odoo.addons.website.models.website import slug",
+      "class ${0: MyClass(models.TransientModel):",
+      "    _inherit = 'my.class'",
+      "    _name = 'my.class'",
+      "    _description = 'My Class'",
+      "   _transient_max_count = 0",
+      "   _transient_max_hours = 1.0",
+      "   _transient_max_count = 0",
+    ]
+  },
+  "Odoo AbtractClass": {
+    "prefix": "oi-transient",
+    "body": [
+      "# -*- coding: utf-8 -*-",
+      "# 1 : imports of python lib",
+      "import base64",
+      "import re",
+      "import time",
+      "from datetime import datetime",
+      "# 2 : imports of odoo",
+      "import odoo",
+      "from odoo import api, fields, models, _ # alphabetically ordered",
+      "from odoo.tools.safe_eval import safe_eval as eval",
+      "# 3 : imports from odoo addons",
+      "from odoo.addons.web.controllers.main import login_redirect",
+      "from odoo.addons.website.models.website import slug",
+      "class ${0: MyClass(models.AbstractModel):",
+      "    _inherit = 'my.class'",
+      "    _name = 'my.class'",
+      "    _description = 'My Class'"
+    ]
+  },
+  "Odoo Create": {
+    "prefix": "oi-method-create",
+    "body": [
+      "@api.model",
+      "def create(self,vals):",
+      "    return super().create(vals)"
+    ]
+  },
+  "Odoo Write_": {
+    "prefix": "oi-method-write",
+    "body": [
+      "@api.model",
+      "def write(self,vals):",
+      "    return super().write(vals)"
+    ]
+  },
+  "Odoo Unlink": {
+    "prefix": "oi-method-write",
+    "body": [
+      "@api.model",
+      "def unlink(self):",
+      "    return super().unlink()"
+    ]
+  },
+  "Odoo ComputeDisplayName": {
+    "prefix": "oi-method-compute-display-name",
+    "body": [
+      "@api.depends('name')",
+      "def _compute_display_name(self):",
+      "    for record in self:",
+      "        record.display_name = 'Tứng đẹp zai'"
+    ]
+  },
+  "Odoo Depends": {
+    "prefix": "oi-depends",
+    "body": [
+      "foo = fields.Char(",
+      "         string='Foo'",
+      "         compute='_compute_foo'",
+      "     )",
+      "@api.depends('name')",
+      "def _compute_foo(self):",
+      "    for record in self:",
+      "        record.foo =  record.name"
+    ]
+  },
+  "Odoo Onchange": {
+    "prefix": "oi-onchange",
+    "body": [
+      "foo = fields.Char(",
+      "         string='Foo'",
+      "     )",
+      "@api.onchange('foo')",
+      "def _onchange_foo(self):",
+      "    for record in self:",
+      "        record.bar =  record.foo"
+    ]
+  },
+  "Odoo Char": {
+    "prefix": "oi-field-char",
+    "body": [
+      "foo = fields.Char(",
+      "         string='Foo',",
+      "         default='Foo',",
+      "         required=False, // 'True' or 'False'",
+      "         readonly=False, // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "     )",
+    ]
+  },
+  "Odoo Boolean": {
+    "prefix": "oi-field-bool",
+    "body": [
+      "foo = fields.Boolean(",
+      "         string='Foo',",
+      "         default=True,",
+      "         required=False, // 'True' or 'False'",
+      "         readonly=False, // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "     )",
+    ]
+  },
+  "Odoo Integer": {
+    "prefix": "oi-field-integer",
+    "body": [
+      "foo = fields.Integer(",
+      "         string='Foo',",
+      "         default=12,",
+      "         required=False, // 'True' or 'False'",
+      "         readonly=False, // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "     )",
+    ]
+  },
+  "Odoo Float": {
+    "prefix": "oi-field-float",
+    "body": [
+      "foo = fields.Float(",
+      "         string='Foo',",
+      "         default=12,",
+      "         required=False, // 'True' or 'False'",
+      "         readonly=False, // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False,// 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         digits=(10,2), // (tuple(int,int)) – a pair (total, decimal)",
+      "     )",
+    ]
+  },
+  "Odoo Binary": {
+    "prefix": "oi-field-binary",
+    "body": [
+      "foo = fields.Binary(",
+      "         string='Foo',",
+      "         required=False, // 'True' or 'False'",
+      "         readonly=False, // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         attachment=True, // whether the field should be stored as ir_attachment or in a column of the model’s table (default: True)",
+      "     )",
+    ]
+  },
+  "Odoo HTMl": {
+    "prefix": "oi-field-html",
+    "body": [
+      "foo = fields.Html(",
+      "         string='Foo',",
+      "         required=False, // 'True' or 'False'",
+      "         readonly=False, // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         sanitize=True,",
+      "         sanitize_tags=True,",
+      "         sanitize_attributes=True,",
+      "         sanitize_style=False,",
+      "         strip_style=False,",
+      "         strip_classes=False,",
+      "     )",
+    ]
+  },
+  "Odoo Image": {
+    "prefix": "oi-field-image",
+    "body": [
+      "foo = fields.Html(",
+      "         string='Foo',",
+      "         required=False, // 'True' or 'False'",
+      "         readonly=False, // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         max_width=0,",
+      "         max_height=0,",
+      "         verify_resolution=True,",
+      "     )",
+    ]
+  },
+  "Odoo Monetary": {
+    "prefix": "oi-field-monetary",
+    "body": [
+      "foo = fields.Html(",
+      "         string='Foo'",
+      "         required=False, // 'True' or 'False'",
+      "         readonly=False, // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2,' // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         res_currency='currency_id',",
+      "     )",
+    ]
+  },
+  "Odoo Selection": {
+    "prefix": "oi-field-selection",
+    "body": [
+      "foo = fields.Selection(",
+      "         selection = [",
+      "            ('a', 'A'),",
+      "            ('b', 'B')",
+      "         ]",
+      "         string='Foo'",
+      "         required=False // 'True' or 'False'",
+      "         readonly=False // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2' // base.group_user",
+      "         company_dependent=False // 'True' or 'False'",
+      "         coppy=False // 'True' or 'False'",
+      "         ondelete='set null' // ['set null', 'cascade', 'set default', 'set VALUE']",
+      "     )",
+    ]
+  },
+  "Odoo AddSelection": {
+    "prefix": "oi-field-add-selection",
+    "body": [
+      "foo = fields.Selection(",
+      "         selection_add = [",
+      "            ('c', 'C'),",
+      "            ('b', ),",
+      "         ]",
+      "     )",
+    ]
+  },
+  "Odoo Text": {
+    "prefix": "oi-field-text",
+    "body": [
+      "foo = fields.Text(",
+      "         string='Foo'",
+      "         default='Foo'",
+      "         required=False // 'True' or 'False'",
+      "         readonly=False // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         translate=True,",
+      "     )",
+    ]
+  },
+  "Odoo Date": {
+    "prefix": "oi-field-date",
+    "body": [
+      "foo = fields.Date(",
+      "         string='Foo'",
+      "         required=False // 'True' or 'False'",
+      "         readonly=False // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "     )",
+    ]
+  },
+  "Odoo Datetime": {
+    "prefix": "oi-field-datetime",
+    "body": [
+      "foo = fields.Datetime(",
+      "         string='Foo'",
+      "         required=False // 'True' or 'False'",
+      "         readonly=False // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "     )",
+    ]
+  },
+  "Odoo Many2one": {
+    "prefix": "oi-field-m2o",
+    "body": [
+      "foo = fields.Many2one(",
+      "         required=False // 'True' or 'False'",
+      "         readonly=False // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         comodel_name=model.name,",
+      "         context={},",
+      "         ondelete='', // ['set null', 'restrict', 'cascade']",
+      "         auto_join=False,",
+      "         delegate=True,",
+      "         check_company=True,",
+      "     )",
+    ]
+  },
+  "Odoo One2many": {
+    "prefix": "oi-field-o2m",
+    "body": [
+      "foo = fields.One2many(",
+      "         string='Foo',",
+      "         required=False, // 'True' or 'False'",
+      "         readonly=False, // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         comodel_name=model.name,",
+      "         context={},",
+      "         inverse_name='m2o_inverse_field_id',",
+      "         auto_join=False,",
+      "     )",
+    ]
+  },
+  "Odoo Many2many": {
+    "prefix": "oi-field-m2m",
+    "body": [
+      "foo = fields.Many2many(",
+      "         string='Foo',",
+      "         required=False, // 'True' or 'False'",
+      "         readonly=False, // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         comodel_name=model.name,",
+      "         context={},",
+      "         relation='field1_field2_rel',",
+      "         column1='current_model_field_id',",
+      "         column2='relation_model_field_id',",
+      "     )",
+    ]
+  },
+  "Odoo Reference": {
+    "prefix": "oi-field-reference",
+    "body": [
+      "foo = fields.Reference(",
+      "         string='Foo',",
+      "         required=False // 'True' or 'False'",
+      "         readonly=False // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         context={},",
+      "         default='res_model,res_id' // Follow partten ('res_model,res_id')",
+      "     )",
+    ]
+  },
+  "Odoo Many2oneReference": {
+    "prefix": "oi-field-m2o-reference",
+    "body": [
+      "foo = fields.Many2oneReference(",
+      "         string='Foo',",
+      "         required=False // 'True' or 'False'",
+      "         readonly=False // 'True' or 'False'",
+      "         index=False, // [('True' or'btree'), 'btree_not_null', 'trigram', ('None' or 'False')]",
+      "         groups='module.group1,module.group2', // base.group_user",
+      "         company_dependent=False, // 'True' or 'False'",
+      "         coppy=False, // 'True' or 'False'",
+      "         context={},",
+      "         model_field=model.name,",
+      "     )",
+    ]
+  },
+  "Odoo Related": {
+    "prefix": "oi-field-related",
+    "body": [
+      "foo = fields.${0:Char}(",
+      "         related='${1:partner_id.name}',",
+      "         depends=['${2:partner_id}'],",
+      "     )",
+    ]
+  },
+  "Odoo Get XML Object": {
+    "prefix": "oi-env-ref",
+    "body": [
+      "foo = self.env.${0:ref}('module.xml_id',raise_if_not_found=True)",
+    ],
+    "description": "Return the record corresponding to the given xml_id"
+  },
+  "Odoo Check Supper User": {
+    "prefix": "oi-env-supper",
+    "body": [
+      "foo = self.env.${0:is_superuser()}",
+    ],
+    "description": "Return whether the environment is in superuser mode."
+  },
+  "Odoo Check Admin User": {
+    "prefix": "oi-env-admin",
+    "body": [
+      "foo = self.env.${0:is_admin()}",
+    ],
+    "description": "Return whether the current user has group “Access Rights”, or is in superuser mode."
+  },
+  "Odoo Check System User": {
+    "prefix": "oi-env-system",
+    "body": [
+      "foo = self.env.${0:is_system()}",
+    ],
+    "description": "Return whether the current user has group “Settings”, or is in superuser mode."
+  },
+  "Odoo Environment Change Context": {
+    "prefix": "oi-env-context",
+    "body": [
+      "foo = self.env.${0:with_context(${1:})}",
+    ],
+    "description": "Returns a new version of this recordset attached to an extended context."
+  },
+  "Odoo Environment Change User": {
+    "prefix": "oi-user",
+    "body": [
+      "foo = self.env.${0:with_user(${1:2})}",
+    ],
+    "description": "Return a new version of this recordset attached to the given user, in non-superuser mode, unless user is the superuser (by convention, the superuser is always in superuser mode.)"
+  },
+  "Odoo Environment Change Environment": {
+    "prefix": "oi-env",
+    "body": [
+      "foo = self.env.${0:with_env(${1:1})}",
+    ],
+    "description": "Return a new version of this recordset attached to the provided environment."
+  },
+  "Odoo Sudo": {
+    "prefix": "oi-env-sudo",
+    "body": [
+      "foo = self.env.sudo()",
+    ],
+    "description": "Returns a new version of this recordset with superuser mode enabled or disabled, depending on flag. The superuser mode does not change the current user, and simply bypasses access rights checks."
+  },
+  "Odoo Method Flush All": {
+    "prefix": "oi-method-flush-all",
+    "body": [
+      "${0:self}.flush_model()",
+    ]
+  },
+  "Odoo Method Flush Model": {
+    "prefix": "oi-method-flush-model",
+    "body": [
+      "${0:self}.flush_model(['${1:'field1'}','${2:'field2'}','${3:'field3'}'])",
+    ]
+  },
+  "Odoo Method Flush Recordset": {
+    "prefix": "oi-method-flush-recordset",
+    "body": [
+      "${0:self}.flush_recordset(['${1:'field1'}','${2:'field2'}','${3:'field3'}'])",
+    ],
+    "description": "Invalidate the cache of all records"
+  },
+  "Odoo Method Invalid All": {
+    "prefix": "oi-method-invalid-all",
+    "body": [
+      "${0:self}.invalidate_all(flush=${1:True})",
+    ],
+    "description": "Invalidate the cache of all records."
+  },
+  "Odoo Method Invalid Model": {
+    "prefix": "oi-method-invalid-model",
+    "body": [
+      "${0:self}.invalidate_model(fnames=['${1:'field1'}','${2:'field2'}','${3:'field3'}'],flush=True)",
+    ],
+    "description": "Invalidate the cache of all records of self’s model, when the cached values no longer correspond to the database values. If the parameter is given, only the given fields are invalidated from cache."
+  },
+  "Odoo Method Invalid Recordset": {
+    "prefix": "oi-method-invalid-recordset",
+    "body": [
+      "${0:self}.invalidate_recordset(fnames=['${1:'field1'}','${2:'field2'}','${3:'field3'}'],flush=True)",
+    ],
+    "description": "Invalidate the cache of the records in self, when the cached values no longer correspond to the database values. If the parameter is given, only the given fields on self are invalidated from cache."
+  },
+  "Odoo Method Modifier": {
+    "prefix": "oi-method-modifier",
+    "body": [
+      "${0:self}.modified(fnames=['${1:'field1'}','${2:'field2'}','${3:'field3'}'],create=False,before=False)",
+    ],
+    "description": "Invalidate the cache of the records in self, when the cached values no longer correspond to the database values. If the parameter is given, only the given fields on self are invalidated from cache."
+  },
+  "Odoo Method Default Get": {
+    "prefix": "oi-method-default-get",
+    "body": [
+      "@api.model",
+      "def default_get(self, fieldslist):",
+      "    return super().default_get(fieldslist)"
+    ],
+    "description": "Return default values for the fields in fields_list. Default values are determined by the context, user defaults, and the model itself."
+  },
+  "Odoo Method Name Create": {
+    "prefix": "oi-method-name-create",
+    "body": [
+      "@api.model",
+      "def name_create(self, name):",
+      "    values = {",
+      "     'name': name",
+      "     }",
+      "    return self.create(values).name_get()"
+    ],
+    "description": "Create a new record by calling create() with only one value provided: the display name of the new record."
+  },
+  "Odoo Method Browse": {
+    "prefix": "oi-method-browse",
+    "body": [
+      "self.env['${0:model.name}'].browse([1,2,3])",
+    ],
+    "description": "Returns a recordset for the ids provided as parameter in the current environment."
+  },
+  "Odoo Method Search": {
+    "prefix": "oi-method-search",
+    "body": [
+      "self.env['${0:model.name}'].search(",
+      "     domain=[",
+      "         ('${1:}','${2:}', '${3:}')",
+      "         ('${4:}','${5:}', '${6:}')",
+      "     ],offset=0, limit=None, order=None",
+      ")"
+    ],
+    "description": "This is a high-level method, which should not be overridden. Its actual implementation is done by method _search()."
+  },
+  "Odoo Method Search Count": {
+    "prefix": "oi-method-search-count",
+    "body": [
+      "self.env['${0:model.name}'].search_count(",
+      "     domain=[",
+      "         ('${1:}','${2:}', '${3:}')",
+      "         ('${4:}','${5:}', '${6:}')",
+      "     ],limit=None,",
+      ")"
+    ],
+    "description": "This is a high-level method, which should not be overridden. Its actual implementation is done by method _search()."
+  },
+  "Odoo Method Search Fetch": {
+    "prefix": "oi-method-search-fetch",
+    "body": [
+      "self.env['${0:model.name}'].search_fetch(",
+      "     domain=[",
+      "         ('${1:}','${2:}', '${3:}')",
+      "         ('${4:}','${5:}', '${6:}')",
+      "     ],fields=['id'],limit=None,order=None",
+      ")"
+    ],
+    "description": "Search for the records that satisfy the given domain search domain, and fetch the given fields to the cache. This method is like a combination of methods search() and fetch(), but it performs both tasks with a minimal number of SQL queries."
+  },
+  "Odoo Method Name Search": {
+    "prefix": "oi-method-name-search",
+    "body": [
+      "self.env['${0:model.name}'].name_search(name='tuấn sad boy', args=None, operator='ilike', limit=100)",
+    ],
+    "description": "Search for records that have a display name matching the given name pattern when compared with the given operator, while also matching the optional search domain (args).This is used for example to provide suggestions based on a partial value for a relational field. Should usually behave as the reverse of display_name, but that is not guaranteed.This method is equivalent to calling search() with a search domain based on display_name and mapping id and display_name on the resulting search."
+  },
+  "Odoo Method Fetch": {
+    "prefix": "oi-method-fetch",
+    "body": [
+      "self.env['${0:model.name}'].fetch(field_names=['${0:field1}','${0:field2}','${0:field3}'])",
+    ],
+    "description": "Make sure the given fields are in memory for the records in self, by fetching what is necessary from the database. Non-stored fields are mostly ignored, except for their stored dependencies. This method should be called to optimize code."
+  },
+  "Odoo Method Read": {
+    "prefix": "oi-method-read",
+    "body": [
+      "self.env['${0:model.name}'].read(fields=['${0:field1}','${0:field2}','${0:field3}'], load=None)",
+    ],
+    "description": "Read the requested fields for the records in self, and return their values as a list of dicts."
+  },
+  "Odoo Method _Read Group": {
+    "prefix": "oi-method-_read-group",
+    "body": [
+      "self.env['${0:model.name}']._read_group(domain=[], groupby=[], aggregates=[], having=[], offset=0, limit=None, order=None)",
+    ],
+    "description": "Get fields aggregations specified by aggregates grouped by the given groupby fields where record are filtered by the domain."
+  },
+  "Odoo Method Read Group": {
+    "prefix": "oi-method-read-group",
+    "body": [
+      "@api.model",
+      "def read_group(self, domain, fields, groupby, offset=0, limit=None, orderby=False, lazy=True):",
+      "    return super().read_group(domain, fields, groupby, offset=offset, limit=limit, orderby=orderby, lazy=lazy)",
+    ],
+    "description": "Get the list of records in list view grouped by the given groupby fields."
+  },
+  "Odoo Method Fields Get": {
+    "prefix": "oi-method-fields-get",
+    "body": [
+      "@api.model",
+      "def fields_get(self, allfields, attributes):",
+      "    return super().fields_get(allfields,attributes)",
+    ],
+    "description": "Return the definition of each field."
+  },
+  "Odoo Method Ensure One": {
+    "prefix": "oi-method-ensure-one",
+    "body": [
+      "self.ensure_one()",
+    ],
+    "description": "Verify that the current recordset holds a single record."
+  },
+  "Odoo Method Get Metadata": {
+    "prefix": "oi-method-get-metadata",
+    "body": [
+      "self.env['${0:model.name}'].get_metadata()",
+    ],
+    "description": "Return some metadata about the given records."
+  },
+  "Odoo Method Filtered": {
+    "prefix": "oi-method-filtered",
+    "body": [
+      "self.filtered(lamda r:r.id == 1)",
+    ],
+    "description": "Return the records in self satisfying func."
+  },
+  "Odoo Method Filter Domain": {
+    "prefix": "oi-method-filter-domain",
+    "body": [
+      "self.filtered_domain([])",
+    ],
+    "description": "Return the records in self satisfying the domain and keeping the same order."
+  },
+  "Odoo Method Mapped": {
+    "prefix": "oi-method-mapped",
+    "body": [
+      "self.mapped('${0:id}')",
+    ],
+    "description": "Apply func on all records in self, and return the result as a list or a recordset (if func return recordsets). In the latter case, the order of the returned recordset is arbitrary."
+  },
+  "Odoo Method Sorted": {
+    "prefix": "oi-method-sorted",
+    "body": [
+      "self.sorted(key='${0:name}',reverse=${1:False})",
+    ],
+    "description": "Return the recordset self ordered by key."
+  },
+  "Odoo Method Grouped": {
+    "prefix": "oi-method-grouped",
+    "body": [
+      "self.grouped(key='field_id'})",
+    ],
+    "description": "Eagerly groups the records of self by the key, returning a dict from the key’s result to recordsets. All the resulting recordsets are guaranteed to be part of the same prefetch-set.Provides a convenience method to partition existing recordsets without the overhead of a read_group(), but performs no aggregation."
+  },
+}
