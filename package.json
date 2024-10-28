@@ -1,14 +1,15 @@
 {
   "name": "tim-snippets",
-  "displayName": "[TIM] Odoo Snippets",
-  "description": "Snippets",
-  "version": "0.0.1",
+  "displayName": "[Tim]Odoo Snippets",
+  "description": "Snippets for Odoo",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.94.0"
   },
   "categories": [
     "Snippets"
   ],
+  "publisher": "BDT",
   "contributes": {
     "snippets": [
       {
@@ -25,13 +26,17 @@
       }
     ]
   },
-  "icons": {
-    "16": "./assets/icon.png",
-    "48": "./assets/icon.png",
-    "128": "./assets/icon.png"
-  },
-  "repository":{
+  "icon": "assets/icon.png",
+  "repository": {
     "type": "git",
     "url": "git@github.com:OrcCyber/snippets.git"
-  } 
+  },
+  "keywords": [
+    "odoo",
+    "snippets",
+    "python",
+    "xml",
+    "javascript"
+  ],
+  "license": "MIT"
 }

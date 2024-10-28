@@ -1,6 +1,3 @@
-## [Change]
-
-[25-10-204] 
-    -   Languages: 
-    -   Javascript: 
-    - Version: 1.0.0
+| Date         | Content                                                  |
+| ------------ | -------------------------------------------------------- |
+| `28/10/2024` | Add code snippets for `python` `javascript` `xml` `csv`. |
