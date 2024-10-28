@@ -1,8 +1,8 @@
 {
   "name": "tim-snippets",
-  "displayName": "[Tim]Odoo Snippets",
+  "displayName": "Odoo Development Snippets",
   "description": "Snippets for Odoo",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "engines": {
     "vscode": "^1.94.0"
   },
