@@ -1141,4 +1141,39 @@
         "isFileTemplate": false,
         "scope": "xml",
     },
+    "Menu  self tag": {
+        "prefix": [
+            "menu"
+        ],
+        "body": [
+            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" web_icon=\"${1:MODULE,static/description/icon.png}\" sequence=\"10\"/>"
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "Menu close tag": {
+        "prefix": [
+            "menu"
+        ],
+        "body": [
+            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" web_icon=\"${1:MODULE,static/description/icon.png}\" sequence=\"10\">",
+            "",
+            "</menuitem>",
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "Sub menuitem close tag": {
+        "prefix": [
+            "menu",
+            "submenuitem"
+        ],
+        "body": [
+            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" sequence=\"10\" action=\"\">",
+            "",
+            "</menuitem>",
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
 }
