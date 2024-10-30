@@ -562,7 +562,7 @@
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
             "   <field name=\"res_model\">${2:MODEL.NAME}</field>",
             "   <field name=\"view_mode\">${3:tree,form,kanban,pivot,activity,calendar}</field>",
-            "   <field name=\"domain\">{}</field>",
+            "   <field name=\"domain\">[]</field>",
             "   <field name=\"context\">{}</field>",
             "   <field name=\"search_view_id\" ref=\"${4:MODULE.SEARCH_XML_ID}\"/>",
             "   <field name=\"view_ids\" eval=\"[(5,0,0),(0,0,{\"view_mode\": \"tree\", \"view_id\": ref(\"MODULE_NAME.VIEW_XML_ID\")})]\"/>",
