@@ -2,7 +2,7 @@
   "name": "tim-snippets",
   "displayName": "Odoo Development Snippets",
   "description": "Snippets for Odoo",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "engines": {
     "vscode": "^1.94.0"
   },
@@ -36,7 +36,8 @@
     "snippets",
     "python",
     "xml",
-    "javascript"
+    "javascript",
+    "csv"
   ],
   "license": "MIT"
 }

@@ -14,28 +14,28 @@ This repository provides a collection of VS Code snippets for efficient Odoo dev
 | `f`    | Function.      |
 | `af`   | Arow Function. |
 
-| Prefix                  | Description                                   |
-| ----------------------- | --------------------------------------------- |
-| `oi-templates`          | Creates templates OWL.                        |
-| `oi-component`          | Creates an import for OWL components in Odoo. |
-| `oi-lifecyle`           | Imports OWL component lifecycle methods.      |
-| `oi-registry`           | Imports the OWL registry.                     |
-| `oi-translate`          | Imports the OWL translation function.         |
-| `oi-memoize`            | Imports the memoize function.                 |
-| `oi-browser`            | Imports the OWL browser utility.              |
-| `oi-lifecyle-hooks`     | Imports lifecycle hooks.                      |
-| `oi-other-hooks`        | Imports Utils hooks.                          |
-| `oi-hooks-owst`         | onWillStart hook for async setup.             |
-| `oi-hooks-owr`          | onWillRender hook for pre-render actions.     |
-| `oi-hooks-or`           | onRendered hook for post-render actions.      |
-| `oi-hooks-omt`          | onMounted hook for component mount actions.   |
-| `oi-hooks-oup`          | onWillUpdateProps hook for prop updates.      |
-| `oi-hooks-owp`          | onWillPatch hook before DOM patching.         |
-| `oi-hooks-op`           | onPatched hook after DOM patching.            |
-| `oi-hooks-owum`         | onWillUnmount hook before component unmounts. |
-| `oi-hooks-owdt`         | onWillDestroy hook before component cleanup.  |
-| `oi-hooks-oe`           | onError hook for error handling.              |
-| `.....................` | ....................                          |
+| Prefix                     | Description                                   |
+| -------------------------- | --------------------------------------------- |
+| `o-template` or `template` | Creates templates OWL.                        |
+| `oi-component`             | Creates an import for OWL components in Odoo. |
+| `oi-lifecyle`              | Imports OWL component lifecycle methods.      |
+| `oi-registry`              | Imports the OWL registry.                     |
+| `oi-translate`             | Imports the OWL translation function.         |
+| `oi-memoize`               | Imports the memoize function.                 |
+| `oi-browser`               | Imports the OWL browser utility.              |
+| `oi-lifecyle-hooks`        | Imports lifecycle hooks.                      |
+| `oi-other-hooks`           | Imports Utils hooks.                          |
+| `oi-hooks-owst`            | onWillStart hook for async setup.             |
+| `oi-hooks-owr`             | onWillRender hook for pre-render actions.     |
+| `oi-hooks-or`              | onRendered hook for post-render actions.      |
+| `oi-hooks-omt`             | onMounted hook for component mount actions.   |
+| `oi-hooks-oup`             | onWillUpdateProps hook for prop updates.      |
+| `oi-hooks-owp`             | onWillPatch hook before DOM patching.         |
+| `oi-hooks-op`              | onPatched hook after DOM patching.            |
+| `oi-hooks-owum`            | onWillUnmount hook before component unmounts. |
+| `oi-hooks-owdt`            | onWillDestroy hook before component cleanup.  |
+| `oi-hooks-oe`              | onError hook for error handling.              |
+| `.....................`    | ....................                          |
 
 </details>
 
