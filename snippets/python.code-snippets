@@ -836,7 +836,7 @@
       "required"
     ],
     "body": [
-      "required=True"
+      "required=True,"
     ]
   },
   "Readonly property": {
@@ -844,7 +844,7 @@
       "readonly"
     ],
     "body": [
-      "readonly=True"
+      "readonly=True,"
     ]
   },
   "Compute property": {
@@ -860,7 +860,7 @@
       "groups"
     ],
     "body": [
-      "groups=True"
+      "groups=\"\","
     ]
   },
   "String property": {
@@ -900,7 +900,7 @@
       "company_dependent"
     ],
     "body": [
-      "company_dependent=\"True\","
+      "company_dependent=True,"
     ]
   },
   "Copy property": {
@@ -908,7 +908,7 @@
       "copy"
     ],
     "body": [
-      "copy=\"True\","
+      "copy=True,"
     ]
   },
   "Store property": {
@@ -916,7 +916,7 @@
       "store"
     ],
     "body": [
-      "store=\"True\","
+      "store=True,"
     ]
   },
   "Group operator property": {
@@ -940,7 +940,7 @@
       "compute_sudo"
     ],
     "body": [
-      "compute_sudo=\"True\","
+      "compute_sudo=True,"
     ]
   },
   "Precompute property": {
@@ -948,7 +948,7 @@
       "precompute"
     ],
     "body": [
-      "precompute=\"True\","
+      "precompute=True,"
     ]
   },
   "Recursive property": {

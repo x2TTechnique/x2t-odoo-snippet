@@ -8,3 +8,4 @@
 | `2.0.2` | `30/10/2024` | Fix class component js                                                     |
 | `2.1.0` | `30/10/2024` | New xml snippets `menuitem`                                                |
 | `2.1.1` | `30/10/2024` | Fix property `domain` in action                                            |
+| `2.1.2` | `02/11/2024` | Change value property `bool`                                               |
