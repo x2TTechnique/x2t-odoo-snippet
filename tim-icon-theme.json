@@ -1,0 +1,220 @@
+{
+  "iconDefinitions": {
+    "fodoo": {
+      "iconPath": "./icons/fodoo.svg"
+    },
+    "fowl": {
+      "iconPath": "./icons/fowl.svg"
+    },
+    "freport": {
+      "iconPath": "./icons/freport.svg"
+    },
+    "fgithub": {
+      "iconPath": "./icons/fgithub.svg"
+    },
+    "fgitlab": {
+      "iconPath": "./icons/fgitlab.svg"
+    },
+    "fcontroller": {
+      "iconPath": "./icons/fcontroller.svg"
+    },
+    "fvscode": {
+      "iconPath": "./icons/fvscode.svg"
+    },
+    "ftest": {
+      "iconPath": "./icons/ftest.svg"
+    },
+    "fbase": {
+      "iconPath": "./icons/fbase.svg"
+    },
+    "fi18n": {
+      "iconPath": "./icons/fi18n.svg"
+    },
+    "fmodel": {
+      "iconPath": "./icons/fmodel.svg"
+    },
+    "frouter": {
+      "iconPath": "./icons/frouter.svg"
+    },
+    "fplugin": {
+      "iconPath": "./icons/fplugin.svg"
+    },
+    "fpackage": {
+      "iconPath": "./icons/fpackage.svg"
+    },
+    "fdatabase": {
+      "iconPath": "./icons/fdatabase.svg"
+    },
+    "fcomponent": {
+      "iconPath": "./icons/fcomponent.svg"
+    },
+    "fapp": {
+      "iconPath": "./icons/fapp.svg"
+    },
+    "fapi": {
+      "iconPath": "./icons/fapi.svg"
+    },
+    "fenvironment": {
+      "iconPath": "./icons/fenvironment.svg"
+    },
+    "fdocs": {
+      "iconPath": "./icons/fdocs.svg"
+    },
+    "fcore": {
+      "iconPath": "./icons/fcore.svg"
+    },
+    "fdownload": {
+      "iconPath": "./icons/fdownload.svg"
+    },
+    "py": {
+      "iconPath": "./icons/py.svg"
+    },
+    "js": {
+      "iconPath": "./icons/js.svg"
+    },
+    "xml": {
+      "iconPath": "./icons/xml.svg"
+    },
+    "html": {
+      "iconPath": "./icons/html.svg"
+    },
+    "css": {
+      "iconPath": "./icons/css.svg"
+    },
+    "scss": {
+      "iconPath": "./icons/scss.svg"
+    },
+    "sass": {
+      "iconPath": "./icons/sass.svg"
+    },
+    "svg": {
+      "iconPath": "./icons/svg.svg"
+    },
+    "dart": {
+      "iconPath": "./icons/dart.svg"
+    },
+    "git": {
+      "iconPath": "./icons/git.svg"
+    },
+    "jsx": {
+      "iconPath": "./icons/react.svg"
+    },
+    "webpack": {
+      "iconPath": "./icons/webpack.svg"
+    },
+    "rb": {
+      "iconPath": "./icons/rb.svg"
+    },
+    "cs": {
+      "iconPath": "./icons/cs.svg"
+    },
+    "json": {
+      "iconPath": "./icons/json.svg"
+    },
+    "vagrant": {
+      "iconPath": "./icons/vagrant.svg"
+    },
+    "ts": {
+      "iconPath": "./icons/ts.svg"
+    },
+    "md": {
+      "iconPath": "./icons/md.svg"
+    },
+    "zip": {
+      "iconPath": "./icons/zip.svg"
+    },
+    "sql": {
+      "iconPath": "./icons/fdatabase.svg"
+    },
+    "gemfile": {
+      "iconPath": "./icons/gemfile.svg"
+    },
+    "font": {
+      "iconPath": "./icons/font.svg"
+    },
+    "po": {
+      "iconPath": "./icons/po.svg"
+    },
+    "log": {
+      "iconPath": "./icons/log.svg"
+    }
+  },
+  "folderNames": {
+    "odoo": "fodoo",
+    "16c": "fodoo",
+    "17c": "fodoo",
+    "18c": "fodoo",
+    "static": "fowl",
+    "src": "fowl",
+    "github": "fgithub",
+    "gitlab": "fgitlab",
+    "i18n": "fi18n",
+    ".vscode": "fvscode",
+    "vscode": "fvscode",
+    "controllers": "fcontroller",
+    "controller": "fcontroller",
+    "models": "fmodel",
+    "model": "fmodel",
+    "packages": "fpackage",
+    "package": "fpackage",
+    "plugins": "fplugin",
+    "plugin": "fplugin",
+    "routers": "frouter",
+    "router": "frouter",
+    "database": "fdatabase",
+    "databases": "fdatabase",
+    "tests": "ftest",
+    "test": "ftest",
+    "components": "fcomponent",
+    "component": "fcomponent",
+    "app": "fapp",
+    "apps": "fapp",
+    "api": "fapi",
+    "apis": "fapi",
+    "environments": "fenvironment",
+    "environment": "fenvironment",
+    "documents": "fdocs",
+    "document": "fdocs",
+    "docs": "fdocs",
+    "core": "fcore",
+    "cores": "fcore",
+    "download": "fdownload",
+    "downloads": "fdownload"
+  },
+  "folder": "fbase",
+  "fileExtensions": {
+    "js": "js",
+    "py": "py",
+    "xml": "xml",
+    "html": "html",
+    "css": "css",
+    "scss": "scss",
+    "sass": "sass",
+    "svg": "svg",
+    "git": "git",
+    "dart": "dart",
+    "jsx": "jsx",
+    "rb": "rb",
+    "cs": "cs",
+    "json": "json",
+    "vscode": "fvscode",
+    "ts": "ts",
+    "md": "md",
+    "zip": "zip",
+    "sql": "sql",
+    "font": "font",
+    "po": "po",
+    "log": "log"
+  },
+  "fileNames": {
+    ".gitignore": "git",
+    ".gitmodules": "git",
+    ".vscodeignore": "git",
+    "webpack.config.js": "webpack",
+    "webpack.config.dev.js": "webpack",
+    "webpack.config.prod.js": "webpack",
+    "webpack.config.test.js": "webpack",
+    "Gemfile": "gemfile",
+    "Vagrant": "vagrant"
+  }
+}

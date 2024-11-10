@@ -183,32 +183,30 @@
   "Depends decoration": {
     "prefix": [
       "depends",
-      "@api",
       "compute",
       "def",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Char(",
-      "         string=\"$TM_CURRENT_WORD\",",
-      "         compute=\"_compute_$TM_CURRENT_WORD\"",
+      "foo = fields.Char(",
+      "         string=\"\",",
+      "         compute=\"_compute_\"",
       ")",
       "@api.depends(\"name\")",
-      "def _compute_$TM_CURRENT_WORD(self):",
+      "def _compute_(self):",
       "    for record in self:",
-      "        record.$TM_CURRENT_WORD =  record.name"
+      "        record.f =  record.name"
     ]
   },
   "Onchange decoration": {
     "prefix": [
       "onchange",
-      "@api",
       "def",
     ],
     "body": [
-      "@api.onchange(\"$TM_CURRENT_WORD\")",
-      "def _onchange_$TM_CURRENT_WORD(self):",
+      "@api.onchange(\"\")",
+      "def _onchange_(self):",
       "    for record in self:",
-      "        record.bar =  record.$TM_CURRENT_WORD"
+      "        record.bar =  record.f"
     ]
   },
   "Char field": {
@@ -217,8 +215,8 @@
       "field",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Char(",
-      "      string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Char(",
+      "      string=\"\",",
       "      default=\"Foo\",",
       "      required=False,",
       "      readonly=False,",
@@ -232,8 +230,8 @@
       "field"
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Boolean(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Boolean(",
+      "    string=\"\",",
       ")",
     ]
   },
@@ -243,8 +241,8 @@
       "integer",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Integer(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Integer(",
+      "    string=\"\",",
       "    default=12,",
       ")",
     ]
@@ -255,8 +253,8 @@
       "field",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Float(",
-      "    string=\"Foo\",",
+      "foo = fields.Float(",
+      "    string=\"\",",
       "    digits=(10,2), # (tuple(int,int)) – a pair (total, decimal)",
       ")",
     ]
@@ -267,8 +265,8 @@
       "binary",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Binary(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Binary(",
+      "    string=\"\",",
       "    attachment=True, # whether the field should be stored as ir_attachment or in a column of the model’s table (default: True)",
       ")",
     ]
@@ -279,8 +277,8 @@
       "html",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Html(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Html(",
+      "    string=\"\",",
       "    sanitize=True,",
       "    sanitize_tags=True,",
       "    sanitize_attributes=True,",
@@ -296,8 +294,8 @@
       "image",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Image(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Image(",
+      "    string=\"\",",
       "    max_width=0,",
       "    max_height=0,",
       "    verify_resolution=True,",
@@ -310,8 +308,8 @@
       "monetary",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Monetary(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Monetary(",
+      "    string=\"\",",
       "    res_currency=\"currency_id\",",
       ")",
     ]
@@ -322,12 +320,12 @@
       "selection",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Selection(",
+      "foo = fields.Selection(",
       "    selection = [",
       "       (\"a\", \"A\"),",
       "       (\"b\", \"B\")",
       "    ]",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "    string=\"\",",
       "    ondelete=\"set null\" # [\"set null\", \"cascade\", \"set default\", \"set VALUE\"]",
       ")",
     ]
@@ -335,11 +333,10 @@
   "Selection add field": {
     "prefix": [
       "field",
-      "selection-add",
-      "add",
+      "selection",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Selection(",
+      "foo = fields.Selection(",
       "    selection_add=[",
       "        (\"c\", \"C\"),",
       "        (\"b\", ),",
@@ -353,8 +350,8 @@
       "text",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Text(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Text(",
+      "    string=\"\",",
       "    translate=True,",
       ")",
     ]
@@ -365,8 +362,8 @@
       "field"
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Date(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Date(",
+      "    string=\"\",",
       ")",
     ]
   },
@@ -376,8 +373,8 @@
       "field",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Datetime(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Datetime(",
+      "    string=\"\",",
       ")",
     ]
   },
@@ -388,8 +385,8 @@
       "m2o",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Many2one(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Many2one(",
+      "    string=\"\",",
       "    comodel_name=\"${0:}\",",
       "    ondelete=\"\", # [\"set null\", \"restrict\", \"cascade\"]",
       ")",
@@ -402,8 +399,8 @@
       "o2m",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.One2many(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.One2many(",
+      "    string=\"\",",
       "    comodel_name=\"${0:}\",",
       "    inverse_name=\"\",",
       ")",
@@ -416,8 +413,8 @@
       "many2many",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Many2many(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Many2many(",
+      "    string=\"\",",
       "    comodel_name=\"${0:}\",",
       "    relation=\"\",",
       "    column1=\"\",",
@@ -431,8 +428,8 @@
       "reference",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Reference(",
-      "    string=\"$TM_CURRENT_WORD\",",
+      "foo = fields.Reference(",
+      "    string=\"\",",
       "    default=\"res_model,res_id\" # Follow partten (\"res_model,res_id\")",
       ")",
     ]
@@ -444,17 +441,17 @@
       "many2onereference",
     ],
     "body": [
-      "$TM_CURRENT_WORD = fields.Many2oneReference(",
-      "    string=\"$TM_CURRENT_WORD\",",
-      "    model_field=\"${1:}\",",
+      "foo = fields.Many2oneReference(",
+      "    string=\"\",",
+      "    model_field=\"${0:}\",",
       ")",
     ]
   },
   "Related field": {
     "prefix": "oi-field-related",
     "body": [
-      "$TM_CURRENT_WORD = fields.${0:Char}(",
-      "    related=\"${1:partner_id.$TM_CURRENT_WORD}\",",
+      "foo = fields.${0:Char}(",
+      "    related=\"${1:partner_id.f}\",",
       "    depends=[\"${2:partner_id}\"],",
       ")",
     ]
@@ -465,7 +462,7 @@
       "ref",
     ],
     "body": [
-      "$TM_CURRENT_WORD = self.env.ref(\"\",raise_if_not_found=True)",
+      "foo = self.env.ref(\"\",raise_if_not_found=True)",
     ],
     "description": "Return the record corresponding to the given xml_id"
   },
@@ -476,7 +473,7 @@
       "is"
     ],
     "body": [
-      "$TM_CURRENT_WORD = self.is_superuser()",
+      "is_super = self.is_superuser()",
     ],
     "description": "Return whether the environment is in superuser mode."
   },
@@ -487,7 +484,7 @@
       "is"
     ],
     "body": [
-      "$TM_CURRENT_WORD = self.is_admin()",
+      "is_admin = self.is_admin()",
     ],
     "description": "Return whether the current user has group “Access Rights”, or is in superuser mode."
   },
@@ -498,7 +495,7 @@
       "is"
     ],
     "body": [
-      "$TM_CURRENT_WORD = self.is_system()",
+      "is_system = self.is_system()",
     ],
     "description": "Return whether the current user has group “Settings”, or is in superuser mode."
   },
@@ -512,7 +509,7 @@
       "context = self.env.context",
       "# Update context here",
       "",
-      "$TM_CURRENT_WORD = self.env[\"\"].with_context(**context)",
+      "context = self.env[\"\"].with_context(**context)",
     ],
     "description": "Returns a new version of this recordset attached to an extended context."
   },
@@ -524,7 +521,7 @@
     ],
     "body": [
       "user = self.env.user",
-      "$TM_CURRENT_WORD = self.env[\"\"].with_user(user)",
+      "user = self.env[\"\"].with_user(user)",
     ],
     "description": "Return a new version of this recordset attached to the given user, in non-superuser mode, unless user is the superuser (by convention, the superuser is always in superuser mode.)"
   },
@@ -535,7 +532,7 @@
       "env",
     ],
     "body": [
-      "$TM_CURRENT_WORD = self.with_env()",
+      "env = self.with_env()",
     ],
     "description": "Return a new version of this recordset attached to the provided environment."
   },
@@ -545,7 +542,7 @@
       "self",
     ],
     "body": [
-      "$TM_CURRENT_WORD = self.env[\"\"].sudo()",
+      "foo = self.env[\"\"].sudo()",
     ],
     "description": "Returns a new version of this recordset with superuser mode enabled or disabled, depending on flag. The superuser mode does not change the current user, and simply bypasses access rights checks."
   },

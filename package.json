@@ -2,12 +2,13 @@
   "name": "tim-snippets",
   "displayName": "Odoo Development Snippets",
   "description": "Snippets for Odoo",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "engines": {
     "vscode": "^1.94.0"
   },
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Themes"
   ],
   "publisher": "BDT",
   "contributes": {
@@ -23,6 +24,13 @@
       {
         "language": "xml",
         "path": "./snippets/xml.code-snippets"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "tim-icons",
+        "label": "Tim Icons",
+        "path": "./tim-icon-theme.json"
       }
     ]
   },
