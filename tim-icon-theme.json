@@ -24,8 +24,8 @@
     "ftest": {
       "iconPath": "./icons/ftest.svg"
     },
-    "fbase": {
-      "iconPath": "./icons/fbase.svg"
+    "flinux": {
+      "iconPath": "./icons/flinux.svg"
     },
     "fi18n": {
       "iconPath": "./icons/fi18n.svg"
@@ -65,6 +65,66 @@
     },
     "fdownload": {
       "iconPath": "./icons/fdownload.svg"
+    },
+    "fview": {
+      "iconPath": "./icons/fview.svg"
+    },
+    "fvideo": {
+      "iconPath": "./icons/fvideo.svg"
+    },
+    "futil": {
+      "iconPath": "./icons/futil.svg"
+    },
+    "funity": {
+      "iconPath": "./icons/funity.svg"
+    },
+    "fui": {
+      "iconPath": "./icons/fui.svg"
+    },
+    "fsnippets": {
+      "iconPath": "./icons/fsnippets.svg"
+    },
+    "ftools": {
+      "iconPath": "./icons/ftools.svg"
+    },
+    "ftemplates": {
+      "iconPath": "./icons/ftemplates.svg"
+    },
+    "fsecurity": {
+      "iconPath": "./icons/fsecurity.svg"
+    },
+    "fassets": {
+      "iconPath": "./icons/fassets.svg"
+    },
+    "fpublic": {
+      "iconPath": "./icons/fpublic.svg"
+    },
+    "fmarkdown": {
+      "iconPath": "./icons/fmarkdown.svg"
+    },
+    "fmessage": {
+      "iconPath": "./icons/fmessage.svg"
+    },
+    "fmiddlware": {
+      "iconPath": "./icons/fmiddlware.svg"
+    },
+    "fclient": {
+      "iconPath": "./icons/fclient.svg"
+    },
+    "fcommand": {
+      "iconPath": "./icons/fcommand.svg"
+    },
+    "fconfig": {
+      "iconPath": "./icons/fconfig.svg"
+    },
+    "fconnection": {
+      "iconPath": "./icons/fconnection.svg"
+    },
+    "fcontext": {
+      "iconPath": "./icons/fcontext.svg"
+    },
+    "fhook": {
+      "iconPath": "./icons/fhook.svg"
     },
     "py": {
       "iconPath": "./icons/py.svg"
@@ -137,6 +197,30 @@
     },
     "log": {
       "iconPath": "./icons/log.svg"
+    },
+    "tim": {
+      "iconPath": "./icons/tim.svg"
+    },
+    "image": {
+      "iconPath": "./icons/image.svg"
+    },
+    "pdf": {
+      "iconPath": "./icons/pdf.svg"
+    },
+    "go": {
+      "iconPath": "./icons/go.svg"
+    },
+    "exe": {
+      "iconPath": "./icons/exe.svg"
+    },
+    "jenkins": {
+      "iconPath": "./icons/jenkins.svg"
+    },
+    "cmake": {
+      "iconPath": "./icons/cmake.svg"
+    },
+    "conf": {
+      "iconPath": "./icons/conf.svg"
     }
   },
   "folderNames": {
@@ -173,15 +257,61 @@
     "apis": "fapi",
     "environments": "fenvironment",
     "environment": "fenvironment",
+    "envs": "fenvironment",
+    "env": "fenvironment",
     "documents": "fdocs",
     "document": "fdocs",
     "docs": "fdocs",
     "core": "fcore",
     "cores": "fcore",
     "download": "fdownload",
-    "downloads": "fdownload"
+    "downloads": "fdownload",
+    "views": "fui",
+    "view": "fview",
+    "video": "fvideo",
+    "videos": "fvideo",
+    "utils": "futil",
+    "util": "futil",
+    "unity": "funity",
+    "unityhub": "funity",
+    "jenkins": "jenkins",
+    "snippets": "fsnippets",
+    "tools": "ftools",
+    "tool": "ftools",
+    "template": "ftemplates",
+    "templates": "ftemplates",
+    "security": "fsecurity",
+    "private": "fsecurity",
+    "assets": "fassets",
+    "asset": "fassets",
+    "images": "fimages",
+    "image": "fimages",
+    "pictures": "fimages",
+    "picture": "fimages",
+    "public": "fpublic",
+    "message": "fmessage",
+    "messages": "fmessage",
+    "markdown": "fmarkdown",
+    "markdowns": "fmarkdown",
+    "middlware": "fmiddlware",
+    "middlwares": "fmiddlware",
+    "configurations": "fconfig",
+    "configuration": "fconfig",
+    "config": "fconfig",
+    "contexts": "fcontext",
+    "contextual": "fcontext",
+    "context": "fcontext",
+    "connection": "fconnection",
+    "connections": "fconnection",
+    "connect": "fconnection",
+    "command": "fcommand",
+    "commands": "fcommand",
+    "client": "fclient",
+    "clients": "fclient",
+    "hook": "fhook",
+    "hooks": "fhook"
   },
-  "folder": "fbase",
+  "folder": "flinux",
   "fileExtensions": {
     "js": "js",
     "py": "py",
@@ -204,7 +334,16 @@
     "sql": "sql",
     "font": "font",
     "po": "po",
-    "log": "log"
+    "log": "log",
+    "png": "image",
+    "jpg": "image",
+    "jpeg": "image",
+    "pdf": "pdf",
+    "go": "go",
+    "exe": "exe",
+    "vsix": "fvscode",
+    "cmake": "cmark",
+    "conf": "conf"
   },
   "fileNames": {
     ".gitignore": "git",
@@ -214,7 +353,9 @@
     "webpack.config.dev.js": "webpack",
     "webpack.config.prod.js": "webpack",
     "webpack.config.test.js": "webpack",
-    "Gemfile": "gemfile",
-    "Vagrant": "vagrant"
-  }
+    "gemfile": "gemfile",
+    "vagrant": "vagrant",
+    "jenkins": "jenkins"
+  },
+  "file": "tim"
 }
