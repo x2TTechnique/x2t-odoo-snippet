@@ -19,11 +19,11 @@
       "   \"version\": \"17.0.1.0.1\",",
       "   \"depends\": [],",
       "   \"installable\": True,",
-      "   \"application': False,",
-      "   'auto_install': False,",
-      "   'price': 0,",
-      "   'currency': 'USD',",
-      "   'data': [",
+      "   \"application\": False,",
+      "   \"auto_install\": False,",
+      "   \"price\": 0,",
+      "   \"currency\": \"USD\",",
+      "   \"data\": [",
       "   #============================================================================================================",
       "   # DATA",
       "",
@@ -45,14 +45,14 @@
       "   # FUNCTION USE TO UPDATE DATA LIKE POST OBJECT",
       "   #============================================================================================================",
       "],",
-      "   'pre_init_hook': None,",
-      "   'post_init_hook': None,",
-      "   'uninstall_hook': None,",
-      "   'external_dependencies': {'python': []},",
-      "   'assets': {",
-      "       'web.assets_backend': [],",
-      "       'web.assets_common': [],",
-      "       'web.qunit_suite_tests': [],",
+      "   \"pre_init_hook\": None,",
+      "   \"post_init_hook\": None,",
+      "   \"uninstall_hook\": None,",
+      "   \"external_dependencies\": {\"python\": []},",
+      "   \"assets\": {",
+      "       \"web.assets_backend\": [],",
+      "       \"web.assets_common\": [],",
+      "       \"web.qunit_suite_tests\": [],",
       "    }",
       "}"
     ]
@@ -80,10 +80,10 @@
       "import odoo",
       "from odoo import api, fields, models, _",
       "# 3 : imports from odoo addons",
-      "class ${0: MyClass}(models.Model):",
-      "    _inherit = \"my.class\"",
-      "    _name = \"my.class\"",
-      "    _description = \"My Class\"",
+      "class ${0: Foo}(models.TransientModel):",
+      "    _inherit = \"foo\"",
+      "    _name = \"foo\"",
+      "    _description = \"Foo Model\"",
       "    _auto= True",
     ]
   },
@@ -104,10 +104,10 @@
       "import odoo",
       "from odoo import api, fields, models, _ ",
       "# 3 : imports from odoo addons",
-      "class ${0: MyClass}(models.TransientModel):",
-      "    _inherit = \"my.class\"",
-      "    _name = \"my.class\"",
-      "    _description = \"My Class\"",
+      "class ${0: Foo}(models.TransientModel):",
+      "    _inherit = \"foo\"",
+      "    _name = \"foo\"",
+      "    _description = \"Foo Model\"",
       "    _transient_max_hours = 1.0",
       "    _transient_max_count = 0",
     ]
@@ -125,16 +125,15 @@
       "import odoo",
       "from odoo import api, fields, models, _",
       "# 3 : imports from odoo addons",
-      "class ${0: MyClass}(models.AbstractModel):",
-      "    _inherit = 'my.class'",
-      "    _name = 'my.class'",
-      "    _description = 'My Class'"
+      "class ${0: Foo}(models.TransientModel):",
+      "    _inherit = \"foo\"",
+      "    _name = \"foo\"",
+      "    _description = \"Foo Model\"",
     ]
   },
   "Create function": {
     "prefix": [
       "create",
-      "orm",
       "def"
     ],
     "body": [
@@ -146,7 +145,6 @@
   "Write function": {
     "prefix": [
       "write",
-      "orm",
       "def"
     ],
     "body": [
@@ -159,7 +157,6 @@
     "prefix": [
       "unlink",
       "def",
-      "orm",
     ],
     "body": [
       "@api.model",

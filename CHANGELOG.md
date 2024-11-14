@@ -11,3 +11,4 @@
 | `2.1.2` | `02/11/2024` | Change value property `bool`                                               |
 | `2.2.0` | `11/11/2024` | Remove current text on python file and custome icon for file and folder    |
 | `2.2.1` | `11/11/2024` | Update icons                                                               |
+| `2.2.2` | `14/11/2024` | Change icon base folder and fix single quote on manifest python snippet    |
