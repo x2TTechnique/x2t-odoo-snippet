@@ -439,8 +439,10 @@
             "field",
         ],
         "body": [
-            "<field name=\"${0:$TM_CURRENT_WORD}\" />",
-            "<field name=\"${0:$TM_CURRENT_WORD}\" />"
+            "<field name=\"${0:}\" />",
+            "<field name=\"${1:}\">",
+            "",
+            "</field>",
         ],
         "description": "Field"
     },

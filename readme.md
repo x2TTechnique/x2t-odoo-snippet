@@ -52,9 +52,9 @@ class SideBar extends Component {
 
   }
 }
-registry.category('actions').add('module.c_name', MyComponents),
-registry.category('views').add('module.c_name', MyComponents),
-registry.category('services').add('module.c_name', MyComponents)
+registry.category('actions').add('module.c_name', SideBar),
+registry.category('views').add('module.c_name', SideBar),
+registry.category('services').add('module.c_name', SideBar)
 ```
 
 ## Python
