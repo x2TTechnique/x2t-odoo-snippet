@@ -2,7 +2,7 @@
   "name": "tim-snippets",
   "displayName": "Odoo Development Snippets",
   "description": "Snippets for Odoo and Icons",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "engines": {
     "vscode": "^1.94.0"
   },
