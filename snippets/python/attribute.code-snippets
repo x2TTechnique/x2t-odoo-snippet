@@ -1,0 +1,146 @@
+{
+    "[Property of Field] required=True": {
+        "prefix": [
+            "required"
+        ],
+        "body": [
+            "required=True,"
+        ]
+    },
+    "[Property of Field] readonly=True": {
+        "prefix": [
+            "readonly"
+        ],
+        "body": [
+            "readonly=True,"
+        ]
+    },
+    "[Property of Field] compute=\"_compute_\"": {
+        "prefix": [
+            "compute"
+        ],
+        "body": [
+            "compute=\"\""
+        ]
+    },
+    "[Property of Field] groups=\"base.group_user\"": {
+        "prefix": [
+            "groups"
+        ],
+        "body": [
+            "groups=\"\","
+        ]
+    },
+    "[Property of Field] index=True": {
+        "prefix": [
+            "index"
+        ],
+        "body": [
+            "index=\"btree\","
+        ]
+    },
+    "[Property of Field] help=\"\"": {
+        "prefix": [
+            "help"
+        ],
+        "body": [
+            "help=\"\","
+        ]
+    },
+    "[Property of Field] default=True": {
+        "prefix": [
+            "default"
+        ],
+        "body": [
+            "default=\"\","
+        ]
+    },
+    "[Property of Field] company_dependent=True": {
+        "prefix": [
+            "company_dependent"
+        ],
+        "body": [
+            "company_dependent=\"\","
+        ]
+    },
+    "[Property of Field] string=\"\"": {
+        "prefix": [
+            "string"
+        ],
+        "body": [
+            "string=\"\","
+        ]
+    },
+    "[Property of Field] copy=True": {
+        "prefix": [
+            "copy"
+        ],
+        "body": [
+            "copy=True,"
+        ]
+    },
+    "[Property of Field] store=True": {
+        "prefix": [
+            "store"
+        ],
+        "body": [
+            "store=True,"
+        ]
+    },
+    "[Property of Field] group_operator=\"\"": {
+        "prefix": [
+            "group_operator"
+        ],
+        "body": [
+            "group_operator=\"array_agg\", # ['array_agg','count','count_distinct','bool_and','bool_or','max','min','avg','sum']"
+        ]
+    },
+    "[Property of Field] group_expand=\"\"": {
+        "prefix": [
+            "group_expand"
+        ],
+        "body": [
+            "group_expand=\"_read_group_${0:FUNCTION_NAME}\","
+        ]
+    },
+    "[Property of Field] compute_sudo=\"\"": {
+        "prefix": [
+            "compute_sudo"
+        ],
+        "body": [
+            "compute_sudo=True,"
+        ]
+    },
+    "[Property of Field] precompute=True": {
+        "prefix": [
+            "precompute"
+        ],
+        "body": [
+            "precompute=True,"
+        ]
+    },
+    "[Property of Field] recursive=True": {
+        "prefix": [
+            "recursive"
+        ],
+        "body": [
+            "recursive=True,"
+        ]
+    },
+    "[Property of Field] inverse=\"_inverse_method_name\"": {
+        "prefix": [
+            "inverse"
+        ],
+        "body": [
+            "inverse=\"_inverse_${0:METHOD_NAME}\","
+        ]
+    },
+    "[Property of Field] search=\"_search_method_name\"": {
+        "prefix": [
+            "search"
+        ],
+        "body": [
+            "search=\"_search_${0:METHOD_NAME}\","
+        ]
+    },
+}

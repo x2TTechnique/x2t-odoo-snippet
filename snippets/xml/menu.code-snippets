@@ -1,0 +1,35 @@
+{
+    "Menu open & close element": {
+        "prefix": [
+            "menu"
+        ],
+        "body": [
+            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" web_icon=\"${1:MODULE,static/description/icon.png}\" sequence=\"10\">",
+            "",
+            "</menuitem>",
+        ],
+        "scope": "xml",
+    },
+    "Menu empty element": {
+        "prefix": [
+            "menu"
+        ],
+        "body": [
+            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" web_icon=\"${1:MODULE,static/description/icon.png}\" sequence=\"10\"/>"
+        ],
+        "scope": "xml",
+    },
+    "Submenu open & close element": {
+        "prefix": [
+            "menu",
+            "submenuitem"
+        ],
+        "body": [
+            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" sequence=\"10\" action=\"\">",
+            "",
+            "</menuitem>",
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+}

@@ -2,7 +2,7 @@
   "name": "tim-snippets",
   "displayName": "Odoo Development Snippets",
   "description": "Snippets for Odoo and Icons",
-  "version": "2.2.4",
+  "version": "3.0.0",
   "engines": {
     "vscode": "^1.94.0"
   },
@@ -15,15 +15,91 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/javascript.code-snippets"
+        "path": "./snippets/javascript/owl.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript/es6.code-snippets"
       },
       {
         "language": "python",
-        "path": "./snippets/python.code-snippets"
+        "path": "./snippets/python/base.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/model.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/function.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/field.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python/attribute.code-snippets"
       },
       {
         "language": "xml",
-        "path": "./snippets/xml.code-snippets"
+        "path": "./snippets/xml/form.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/list.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/kanban.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/pivot.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/activity.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/calendar.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/graph.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/search.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/menu.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/action.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/owl.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/common.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/attributes.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/gant.code-snippets"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml/setting.code-snippets"
       }
     ],
     "iconThemes": [

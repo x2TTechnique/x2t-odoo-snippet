@@ -1,0 +1,24 @@
+{
+    "Pivot view": {
+        "prefix": [
+            "pivot",
+            "view",
+        ],
+        "body": [
+            "<record id=\"${0:view_MODEL_NAME_pivot}\" model=\"ir.ui.view\">",
+            "   <field name=\"name\">${1:VIEW_NAME}</field>",
+            "   <field name=\"model\">${2:MODEL_NAME}</field>",
+            "   <field name=\"arch\" type=\"xml\">",
+            "       <pivot sample=\"1\">",
+            "           <field name=\"product_categ_id\" type=\"col\"/>",
+            "           <field name=\"invoice_date\" type=\"row\"/>",
+            "           <field name=\"price_subtotal\" type=\"measure\"/>",
+            "       </pivot>",
+            "   </field>",
+            "</record>",
+        ],
+        "description": "Pivot view",
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+}

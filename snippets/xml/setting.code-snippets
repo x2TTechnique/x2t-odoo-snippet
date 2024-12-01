@@ -1,0 +1,77 @@
+{
+    "[Configuration & Settings] App + Setting + Block elements": {
+        "prefix": [
+            "setting",
+            "app",
+            "block",
+        ],
+        "body": [
+            "<app string=\"CRM\" name=\"crm\">",
+            "   <setting type=\"header\" string=\"Foo\">",
+            "       <field name=\"foo\" title=\"Foo?.\"/>",
+            "       <button name=\"nameAction\" type=\"object\" string=\"Button\"/>",
+            "   </setting>",
+            "   <block title=\"Title of group Bar\">",
+            "       <setting help=\"this is bar\" documentation=\"/applications/technical/web/settings/this_is_a_test.html\">",
+            "           <field name=\"bar\"/>",
+            "       </setting>",
+            "       <setting string=\"This is Big BAR\" company_specific=\"1\">",
+            "           <field name=\"bar\"/>",
+            "       </setting>",
+            "   </block>",
+            "   <block title=\"Title of group Foo\">",
+            "       <setting string=\"Personalize setting\" help=\"this is full personalize setting\">",
+            "           <div>This is a different setting</div>",
+            "       </setting>",
+            "   </block>",
+            "</app>",
+        ],
+        "scope": "xml"
+    },
+    "[Configuration & Settings] App elements": {
+        "prefix": [
+            "app",
+        ],
+        "body": [
+            "<app string=\"\" name=\"\">",
+            "",
+            "</app>",
+        ],
+        "scope": "xml"
+    },
+    "[Configuration & Settings] Setting elements": {
+        "prefix": [
+            "setting",
+        ],
+        "body": [
+            "<setting type=\"\" string=\"\">",
+            "",
+            "</setting>",
+        ],
+        "scope": "xml"
+    },
+    "[Configuration & Settings] Block elements": {
+        "prefix": [
+            "block",
+        ],
+        "body": [
+            "   <block title=\"Title of group Foo\">",
+            "",
+            "   </block>",
+        ],
+        "scope": "xml"
+    },
+    "[Configuration & Settings] Record elements": {
+        "prefix": [
+            "config",
+            "parameter",
+        ],
+        "body": [
+            "<record id=\"${0:CONFIG_PARAMETER_NAME}_config\" model=\"ir.config_parameter\">",
+            "   <field name=\"key\">${1:MODULE.KEY_NAME}</field>",
+            "   <field name=\"value\" ref=\"\"/>",
+            "</record>"
+        ],
+        "scope": "xml",
+    },
+}

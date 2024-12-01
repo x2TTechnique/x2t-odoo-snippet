@@ -1,0 +1,206 @@
+{
+    "Form view": {
+        "prefix": [
+            "form",
+            "view",
+        ],
+        "body": [
+            "<record id=\"view_MODEL_NAME_form\" model=\"ir.ui.view\">",
+            "   <field name=\"name\">${1:view.name}</field>",
+            "   <field name=\"model\">${2:model.name}</field>",
+            "   <field name=\"arch\" type=\"xml\">",
+            "       <form string=\"\" create=\"\" edit=\"\" duplicate=\"\" delete=\"\" js_class=\"\" disable_autofocus=\"1\" banner_route=\"/module/banner\">",
+            "           <sheet>",
+            "               <div class=\"oe_title\">",
+            "                   <h1>",
+            "                       <field name=\"${0:$TM_CURRENT_WORD}\"/>",
+            "                   </h1>",
+            "               </div>",
+            "               <group>",
+            "                   <group>",
+            "                       <field name=\"${3:}\" widget=\"${4:}\" options=\"{}\"/>",
+            "                   </group>",
+            "                   <group>",
+            "                   </group>",
+            "                   </group>",
+            "                   <notebook>",
+            "                       <page>",
+            "                           <group>",
+            "                               <group>",
+            "                                   <field name=\"${5:}\" widget=\"${6:}\" options=\"{}\"/>",
+            "                               </group>",
+            "                               <group>",
+            "                                </group>",
+            "                            </group>",
+            "                        </page>",
+            "                   </notebook>",
+            "           </sheet>",
+            "           <div class=\"oe_chatter\">",
+            "               <field name=\"message_follower_ids\" widget=\"mail_followers\" />",
+            "               <field name=\"activity_ids\" widget=\"mail_activity\" />",
+            "               <field name=\"message_ids\" widget=\"mail_thread\" />",
+            "           </div>",
+            "       </form>",
+            "   </field>",
+            "</record>",
+        ],
+        "description": "Form view basic",
+        "isFileTemplate": true,
+        "scope": "xml",
+    },
+    "[Form] Notebook": {
+        "prefix": [
+            "notebook",
+        ],
+        "body": [
+            "<notebook>",
+            "   <page string=\"${0:Description}\" name=\"${1:technical_name}\">",
+            "",
+            "   </page>",
+            "</notebook>",
+        ],
+        "description": "Notebook in form view",
+        "isFileTemplate": false,
+        "scope": "xml"
+    },
+    "[Form] Tilte in form view": {
+        "prefix": [
+            "title",
+        ],
+        "body": [
+            "<div class=\"oe_title\">",
+            "   <h1>",
+            "       <field name=\"${0:$TM_CURRENT_WORD}\"/>",
+            "   </h1>",
+            "</div>",
+        ],
+        "description": "Name title in form view.",
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "[Form] Attachment preview": {
+        "prefix": [
+            "attachment",
+            "preview",
+        ],
+        "body": "<div class=\"o_attachment_preview\"/>",
+        "description": "Attachment preview inside form view",
+        "scope": "xml",
+        "isFileTemplate": false,
+    },
+    "[Form] (Followers + Acitivities + Messages) Sidebar": {
+        "prefix": [
+            "widget",
+            "chatter",
+            "mail",
+            "message",
+            "activity",
+            "follower",
+        ],
+        "body": [
+            "<div class=\"oe_chatter\">",
+            "   <field name=\"message_follower_ids\" widget=\"mail_followers\" />",
+            "   <field name=\"activity_ids\" widget=\"mail_activity\" />",
+            "   <field name=\"message_ids\" widget=\"mail_thread\" />",
+            "</div>",
+        ],
+    },
+    "[Form] (Header + Button) element": {
+        "prefix": [
+            "header",
+            "button",
+        ],
+        "body": [
+            "<header>",
+            "   <button type=\"object\" name=\"action_create_new\" string=\"Create document\" display=\"always\"/>",
+            "   <button type=\"action\" name=\"addon.action_create_view\" string=\"Create and Edit\"/>",
+            "</header>",
+        ],
+    },
+    "[Form] Button element": {
+        "prefix": [
+            "header",
+            "button",
+        ],
+        "body": [
+            "<header>",
+            "   <button type=\"object\" name=\"action_create_new\" string=\"Create document\" display=\"always\"/>",
+            "   <button type=\"action\" name=\"addon.action_create_view\" string=\"Create and Edit\"/>",
+            "</header>",
+        ],
+    },
+    "Header element": {
+        "prefix": [
+            "header",
+            "button",
+        ],
+        "body": [
+            "<header>",
+            "",
+            "",
+            "</header>",
+        ],
+        "description": "Header"
+    },
+    "[Form] (Footer + Button) element": {
+        "prefix": [
+            "button",
+            "footer",
+        ],
+        "body": [
+            "<footer>",
+            "   <button string=\"Save\" special=\"save\" />",
+            "   <button string=\"Feature\" type=\"object\" name=\"action_name\" class=\"btn-${0:primary}\"  />",
+            "   <button string=\"Discard\" special=\"cancel\" />",
+            "</footer>",
+        ],
+        "scope": "xml",
+    },
+    "[Form] Footer element": {
+        "prefix": [
+            "button",
+            "footer",
+        ],
+        "body": [
+            "<footer>",
+            "",
+            "",
+            "</footer>",
+        ],
+        "scope": "xml",
+    },
+    "[Form] Statusbar widget": {
+        "prefix": [
+            "statusbar",
+        ],
+        "body": [
+            "<field name=\"state\" widget\"statusbar\"",
+            "       statusbar_visible=\"draft,post\"",
+            "       option=\"{}\"",
+            "/>"
+        ],
+        "description": "Statusbar",
+        "isFileTemplate": false,
+        "scope": "xml"
+    },
+    "[Form] Stat Button": {
+        "prefix": [
+            "button",
+            "stat",
+        ],
+        "body": [
+            "<button name=\"ACTION\" type=\"object\" class=\"oe_stat_button\" icon=\"fa-edit\" help=\"Some content..\" >",
+            "   <div class=\"o_field_widget o_stat_info\" >",
+            "       <span class=\"o_stat_value\">",
+            "           <field name=\"${0:field_counter}\"/>",
+            "       </span>",
+            "       <span class=\"o_stat_value\">",
+            "           Content",
+            "       </span>",
+            "   </div>",
+            "</button>",
+        ],
+        "scope": "xml",
+    },
+    
+}

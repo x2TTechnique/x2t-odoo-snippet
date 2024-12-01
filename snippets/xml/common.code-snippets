@@ -1,0 +1,147 @@
+{
+    "XML elements": {
+        "prefix": [
+            "xml",
+        ],
+        "body": [
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        ],
+        "description": "XML tag",
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "Odoo elements": {
+        "prefix": [
+            "odoo",
+        ],
+        "body": [
+            "<odoo>",
+            "",
+            "",
+            "</odoo>",
+        ],
+        "description": "Odoo tag",
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "Data elements": {
+        "prefix": [
+            "data"
+        ],
+        "body": [
+            "<data noupdate=\"${0:0}\">",
+            "",
+            "</data>",
+        ],
+        "description": "Data tag",
+        "isFileTemplate": false,
+        "scope": "xml"
+    },
+    "XML + Odoo + Data elements": {
+        "prefix": [
+            "data"
+        ],
+        "body": [
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+            "<odoo>",
+            "   <data noupdate=\"${0:0}\">",
+            "",
+            "",
+            "   </data>",
+            "</odoo>",
+        ],
+        "description": "Data tag",
+        "isFileTemplate": false,
+        "scope": "xml"
+    },
+    "Seperator elements": {
+        "prefix": [
+            "seperator",
+        ],
+        "body": [
+            "<seperator/>"
+        ],
+        "isFileTemplate": false,
+        "scope": "xml"
+    },
+    "Newline elements": {
+        "prefix": [
+            "newline",
+        ],
+        "body": [
+            "<newline/>"
+        ],
+    },
+    "Field empty elements": {
+        "prefix": [
+            "field",
+        ],
+        "body": [
+            "<field name=\"${0:}\" />",
+        ],
+        "description": "Field"
+    },
+    "Field open & close element": {
+        "prefix": [
+            "field",
+        ],
+        "body": [
+            "<field name=\"${1:}\">",
+            "",
+            "</field>",
+        ],
+        "description": "Field"
+    },
+    "[Inherit] View elements": {
+        "prefix": [
+            "inherit",
+            "view",
+        ],
+        "body": [
+            "<record id=\"view_${0:VIEW_NAME}_inherit\" model=\"ir.ui.view\">",
+            "   <field name=\"name\">${1:VIEW NAME}</field>",
+            "   <field name=\"model\">${2:MODEL.NAME}</field>",
+            "   <field name=\"inherit_id\" ref=\"${3:MODULE.VIEW_NAME_INEHRIT}\"/>",
+            "   <field name=\"arch\" type=\"xml\">",
+            "",
+            "   </field>",
+            "</record>"
+        ]
+    },
+    "[Inherit] Attribute elements": {
+        "prefix": [
+            "attribute",
+            "inherit",
+        ],
+        "body": [
+            "<attribute name=\"${0:}\"></attribute>",
+        ],
+        "description": "Attribute inherit",
+        "isFileTemplate": false,
+        "scope": "xml"
+    },
+    "[Inherit] Field elements": {
+        "prefix": [
+            "field",
+            "inherit",
+        ],
+        "body": [
+            "<field name=\"${0:}\" position=\"\">",
+            "",
+            "</field>"
+        ],
+        "scope": "xml"
+    },
+    "[Inherit] Xpath DOM elements": {
+        "prefix": [
+            "xpath",
+            "inherit",
+        ],
+        "body": [
+            "<xpath expr=\"${0:}\" position=\"\">",
+            "",
+            "</xpath>"
+        ],
+        "scope": "xml",
+    },
+}

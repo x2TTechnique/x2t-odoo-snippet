@@ -1,0 +1,207 @@
+{
+    "[OWl] Component": {
+        "prefix": [
+            "component",
+            "import",
+            "from"
+        ],
+        "body": [
+            "/** @odoo-module */",
+            "import { Component } from \"@odoo/owl\";"
+        ]
+    },
+    "[OWL] Components Lifecycle": {
+        "prefix": [
+            "lifecycle",
+            "import",
+            "from"
+        ],
+        "body": [
+            "import { willStart, willRender, rendered, mounted, willUpdateProps, willPatch, patched, willUnmount, willDestroy, error } from \"@odoo/owl\";"
+        ]
+    },
+    "[OWL] Registry": {
+        "prefix": [
+            "registry",
+            "import",
+            "from"
+        ],
+        "body": [
+            "import { registry } from \"@web/core/registry\";"
+        ]
+    },
+    "[OWL] Translations": {
+        "prefix": [
+            "translate",
+            "import",
+            "from"
+        ],
+        "body": [
+            "import { _t } from \"@web/core/l10n/translation\";"
+        ],
+        "description": "Translation for text"
+    },
+    "[OWL] Memoize": {
+        "prefix": [
+            "memoize",
+            "import",
+            "from"
+        ],
+        "body": [
+            "import { memoize } from \"@web/core/utils/functions\";"
+        ]
+    },
+    "[OWL] Browser": {
+        "prefix": [
+            "import",
+            "from",
+            "browser"
+        ],
+        "body": [
+            "import { browser } from \"@web/core/browser/browser\";"
+        ]
+    },
+    "[OWL] Lifecycle Hooks": {
+        "prefix": [
+            "hook",
+            "onWill",
+            "import",
+            "from"
+        ],
+        "body": [
+            "import { onWillStart, onMounted, onWillPatch, onWillUpdateProps, onPatched, onWillRender, onRendered, onWillUnmount, onWillDestroy, onError } from \"@odoo/owl\";"
+        ]
+    },
+    "[OWL] Hooks": {
+        "prefix": [
+            "use",
+            "hook",
+            "import",
+            "from"
+        ],
+        "body": [
+            "import { useState, useRef, useSubEnv, useChildSubEnv, useExternalListener, useComponent, useEnv, useEffect } from \"@odoo/owl\";"
+        ]
+    },
+    "[OWL] onWillStart Hook": {
+        "prefix": [
+            "onWillStart"
+        ],
+        "body": [
+            "onWillStart(async () => {",
+            "  ${2://Your code....}",
+            "});"
+        ]
+    },
+    "[OWL] onWillRender Hook": {
+        "prefix": [
+            "onWillRender"
+        ],
+        "body": [
+            "onWillRender(() => {",
+            "  ${0://Your code...}",
+            "});"
+        ]
+    },
+    "[OWL] onRendered Hook": {
+        "prefix": [
+            "onRendered"
+        ],
+        "body": [
+            "onRendered(() => {",
+            "  ${0://Your code...}",
+            "});"
+        ]
+    },
+    "[OWL] onMounted Hook": {
+        "prefix": [
+            "onMounted"
+        ],
+        "body": [
+            "onMounted(() => {",
+            "  ${0://Your code...}",
+            "});"
+        ]
+    },
+    "[OWL] onWillUpdateProps Hook": {
+        "prefix": [
+            "onWillUpdateProps"
+        ],
+        "body": [
+            "onWillUpdateProps((nextProps) => { return; });"
+        ]
+    },
+    "[OWL] onWillPatch Hook": {
+        "prefix": [
+            "onWillPatch"
+        ],
+        "body": [
+            "onWillPatch(() => {",
+            "  ${0://Your code...}",
+            "});"
+        ]
+    },
+    "[OWL] onPatched Hook": {
+        "prefix": [
+            "onPatched"
+        ],
+        "body": [
+            "onPatched(() => {",
+            "  ${0://Your code...}",
+            "});"
+        ]
+    },
+    "[OWL] onWillUnmount Hook": {
+        "prefix": [
+            "onWillUnmount"
+        ],
+        "body": [
+            "onWillUnmount(() => {",
+            "  ${0://Your code...}",
+            "});"
+        ]
+    },
+    "[OWL] onWillDestroy Hook": {
+        "prefix": [
+            "onWillDestroy"
+        ],
+        "body": [
+            "onWillDestroy(() => {",
+            "  ${0://Your code...}",
+            "});"
+        ]
+    },
+    "[OWL] onError Hook": {
+        "prefix": [
+            "onError"
+        ],
+        "body": [
+            "onError(() => {",
+            "  ${0://Your code...}",
+            "});"
+        ]
+    },
+    "[OWL] Class Component": {
+        "prefix": [
+            "class"
+        ],
+        "body": [
+            "/** @odoo-module */",
+            "import { Component } from \"@odoo/owl\";",
+            "import { registry } from \"@web/core/registry\";",
+            "import { standardFieldProps } from \"@web/views/fields/standard_field_props\";",
+            "class ${0:MyComponent} extends Component {",
+            "  static template = ${1:\"Module.Template\"};",
+            "  static props = {};",
+            "  static components = {};",
+            "  static defaultProps = {};",
+            "  setup() {",
+            "    ${2:// Your code....}",
+            "  }",
+            "}",
+            "registry.category(\"actions\").add(\"module.c_name\", MyComponent);",
+            "registry.category(\"views\").add(\"module.c_name\", MyComponent);",
+            "registry.category(\"services\").add(\"module.c_name\", MyComponent);"
+        ]
+    }
+}

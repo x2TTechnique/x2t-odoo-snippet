@@ -225,9 +225,13 @@
   },
   "folderNames": {
     "odoo": "fodoo",
+    "addons": "fodoo",
     "16c": "fodoo",
     "17c": "fodoo",
     "18c": "fodoo",
+    "16e": "fodoo",
+    "17e": "fodoo",
+    "18e": "fodoo",
     "static": "fowl",
     "src": "fowl",
     "github": "fgithub",

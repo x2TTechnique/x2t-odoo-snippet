@@ -1,0 +1,66 @@
+{
+    "[Model] Model": {
+        "prefix": [
+            "class",
+            "model"
+        ],
+        "body": [
+            "# -*- coding: utf-8 -*-",
+            "# 1 : imports of python lib",
+            "# 2 : imports of odoo",
+            "import odoo",
+            "from odoo import api, fields, models, _",
+            "# 3 : imports from odoo addons",
+            "class ${0: Foo}(models.Model):",
+            "",
+            "    _inherit = \"foo\"",
+            "    _name = \"foo\"",
+            "    _description = \"Foo Model\"",
+            "    _auto= True",
+        ]
+    },
+    "[Model] Transient": {
+        "prefix": [
+            "transient",
+            "class",
+            "model"
+        ],
+        "body": [
+            "# -*- coding: utf-8 -*-",
+            "# 1 : imports of python lib",
+            "import base64",
+            "import re",
+            "import time",
+            "from datetime import datetime",
+            "# 2 : imports of odoo",
+            "import odoo",
+            "from odoo import api, fields, models, _ ",
+            "# 3 : imports from odoo addons",
+            "class ${0: Foo}(models.TransientModel):",
+            "    _inherit = \"foo\"",
+            "    _name = \"foo\"",
+            "    _description = \"Foo Model\"",
+            "    _transient_max_hours = 1.0",
+            "    _transient_max_count = 0",
+        ]
+    },
+    "[Model] Abtract": {
+        "prefix": [
+            "abtract",
+            "class",
+            "model"
+        ],
+        "body": [
+            "# -*- coding: utf-8 -*-",
+            "# 1 : imports of python lib",
+            "# 2 : imports of odoo",
+            "import odoo",
+            "from odoo import api, fields, models, _",
+            "# 3 : imports from odoo addons",
+            "class ${0: Foo}(models.AbstractModel):",
+            "    _inherit = \"foo\"",
+            "    _name = \"foo\"",
+            "    _description = \"Foo Model\"",
+        ]
+    },
+}

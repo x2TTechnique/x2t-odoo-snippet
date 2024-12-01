@@ -1,0 +1,52 @@
+{
+    "[Permission] Module category record elements": {
+        "prefix": [
+            "module",
+            "module-category",
+        ],
+        "body": [
+            "<record id=\"module_${0:MODULE_NAME_CATEGORY_NAME}\" model=\"ir.module.category\">",
+            "   <field name=\"name\">${1:CATEGORY_NAME}</field>",
+            "   <field name=\"description\">${1:DESCRIPTION}</field>",
+            "   <field name=\"sequence\">${1:100}</field>",
+            "</record>"
+        ],
+        "scope": "xml"
+    },
+    "[Permission] Group elements": {
+        "prefix": [
+            "group",
+            "record"
+        ],
+        "body": [
+            "<record id=\"group_${0:NAME}\" model=\"res.groups\">",
+            "   <field name=\"name\"></field>",
+            "   <field name=\"implied_ids\" eval=\"[Command.link(ref())]\"/>",
+            "   <field name=\"users\" eval=\"[Command.link(ref())]\"/>",
+            "   <field name=\"category_id\" ref=\"${1:MODULE.MODULE_CATEGORY_NAME}\"/>",
+            "</record>"
+        ],
+        "description": "Record group",
+        "isFileTemplate": false,
+        "scope": "xml"
+    },
+    "[Permission] Rule elements": {
+        "prefix": [
+            "rule",
+            "record",
+        ],
+        "body": [
+            "<record id=\"rule_${0:NAME}\" model=\"ir.rule\">",
+            "   <field name=\"name\"></field>",
+            "   <field name=\"model_id\" ref=\"${1:MODULE.MODEL_NAME}\"/>",
+            "   <field name=\"domain_force\">[]</field>",
+            "   <field name=\"groups\" eval=\"\"/>",
+            "   <field name=\"perm_unlink\" eval=\"True\"/>",
+            "   <field name=\"perm_write\" eval=\"True\"/>",
+            "   <field name=\"perm_read\" eval=\"True\"/>",
+            "   <field name=\"perm_create\" eval=\"True\"/>",
+            "</record>"
+        ],
+        "scope": "xml",
+    }
+}

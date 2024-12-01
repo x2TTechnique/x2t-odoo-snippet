@@ -1,0 +1,61 @@
+{
+    "Widget attribute": {
+        "prefix": [
+            "widget",
+        ],
+        "body": [
+            "widget=\"\""
+        ],
+        "scope": "xml",
+    },
+    "Require attribute": {
+        "prefix": [
+            "require",
+        ],
+        "body": [
+            "require=\"\""
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "Options attribute": {
+        "prefix": [
+            "options",
+        ],
+        "body": [
+            "options=\"{}\""
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "Invisible attribute": {
+        "prefix": [
+            "invisible",
+        ],
+        "body": [
+            "invisible=\"\""
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "Readonly attribute": {
+        "prefix": [
+            "readonly",
+        ],
+        "body": [
+            "readonly=\"True\""
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "Optional attribute": {
+        "prefix": [
+            "optional",
+        ],
+        "body": [
+            "optional=\"hide\""
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+}

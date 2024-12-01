@@ -1,0 +1,20 @@
+{
+    "Calendar view": {
+        "prefix": [
+            "calendar",
+            "view",
+        ],
+        "body": [
+            "<record id=\"${0:view_MODEL_NAME_calendar}\" model=\"ir.ui.view\">",
+            "   <field name=\"name\">${1:VIEW_NAME}</field>",
+            "   <field name=\"model\">${2:MODEL_NAME}</field>",
+            "   <field name=\"arch\" type=\"xml\">",
+            "       <calendar all_day=\"${11:FIELD_NAME}\" create_name_field=\"${10:FIELD_NAME}\" delete=\"1\" create=\"1\" sample=\"1\" mode=\"month\" date_start=\"${3:FIELD_NAME}\" color=\"${4:FIELD_NAME}\" date_stop=\"${5:FIELD_NAME}\" date_delay=\"${6:7}\" form_view_id=\"${7:MODULE.VIEW_FORM_XML_ID}\" quick_create=\"${8:FIELD_NAME}\" quick_create_view_id=\"${9:MODULE.VIEW_FORM_XML_ID}\">",
+            "           <field name=\"${12:FIELD_NAME}\" invisible=\"${13:False}\" avatar_field=\"${14:FIELD_X2MANY}\" filters=\"${15:True}\" color=\"${16:True}\" />",
+            "       </calendar>",
+            "   </field>",
+            "</record>",
+        ],
+        "scope": "xml",
+    }
+}

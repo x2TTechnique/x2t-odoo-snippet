@@ -1,0 +1,239 @@
+{
+    "[Owl] Templates element": {
+        "prefix": [
+            "template",
+        ],
+        "body": [
+            "<templates xml:space=\"preserve\">",
+            "",
+            "</templates>",
+        ],
+        "scope": "xml",
+    },
+    "[Owl] Templates inherit element": {
+        "prefix": [
+            "template",
+            "inherit"
+        ],
+        "body": [
+            "<templates xml:space=\"preserve\">",
+            "   <t t-name=\"\" t-inherit=\"\" t-inherit-mode=\"${0:primary|extension}\">",
+            "",
+            "   </t>",
+            "</templates>",
+        ],
+        "scope": "xml",
+    },
+    "[Owl] t-name element": {
+        "prefix": [
+            "t",
+            "t-name",
+        ],
+        "body": [
+            "<t t-name=\"\">",
+            "",
+            "</t>",
+        ],
+    },
+    "[Owl -Qweb] t-ecs element": {
+        "prefix": [
+            "t",
+            "t-esc",
+        ],
+        "body": [
+            "<t t-esc=\"\">",
+            "",
+            "</t>",
+        ],
+        "scope": "xml",
+    },
+    "[Owl -Qweb] t-out element": {
+        "prefix": [
+            "t",
+            "t-out",
+        ],
+        "body": [
+            "<t t-out=\"\">",
+            "",
+            "</t>",
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "(Owl -Qweb) t-attf-class element": {
+        "prefix": [
+            "t",
+            "t-attf-class",
+            "class",
+        ],
+        "body": [
+            "<t t-attf-class=\"row {{ }}\">",
+            "",
+            "</t>",
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "[Owl -Qweb] t-foreach element": {
+        "prefix": [
+            "t",
+            "t-foreach",
+        ],
+        "body": [
+            "<t t-foreach=\"\" t-as=\"\">",
+            "   <p><t t-out=\"i\"/></p>",
+            "</t>"
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "[Owl -Qweb] t-if element": {
+        "prefix": [
+            "t",
+            "t-if",
+        ],
+        "body": [
+            "<t t-if=\"condition\">",
+            "",
+            "</t>"
+        ],
+        "scope": "xml",
+    },
+    "[Owl -Qweb] t-if-else element": {
+        "prefix": [
+            "t",
+            "t-if-else",
+        ],
+        "body": [
+            "<t t-if=\"condition\">",
+            "",
+            "</t>",
+            "<t t-else=\"\">",
+            "",
+            "</t>"
+        ],
+        "scope": "xml",
+    },
+    "[Owl -Qweb] t-elif element": {
+        "prefix": [
+            "t",
+            "t-elif",
+        ],
+        "body": [
+            "<t t-elif=\"condition\">",
+            "",
+            "</t>",
+        ],
+        "scope": "xml",
+    },
+    "[Owl -Qweb] t-set element": {
+        "prefix": [
+            "t",
+            "t-set",
+        ],
+        "body": [
+            "<t t-set=\"variable\" t-value=\"True\"/>",
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "[Owl -Qweb] t-att element": {
+        "prefix": [
+            "t",
+            "t-att",
+        ],
+        "body": [
+            "<t t-att-${0:DATA}=\"5\"/>",
+        ],
+        "scope": "xml",
+    },
+    "[Owl -Qweb] t-call element": {
+        "prefix": [
+            "t",
+            "t-call",
+        ],
+        "body": [
+            "<t t-call=\"5\">",
+            "",
+            "</t>"
+        ],
+        "scope": "xml",
+    },
+    "[Owl -Qweb] t-field element": {
+        "prefix": [
+            "t",
+            "t-field",
+        ],
+        "body": [
+            "<div t-field=\"5\">",
+            "",
+            "</div>"
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "[Owl -Qweb] t-options element": {
+        "prefix": [
+            "t",
+            "t-options",
+        ],
+        "body": [
+            "t-options=\"{'widget': 'integer'}\"",
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "[Owl] t-cache attribute": {
+        "prefix": [
+            "t",
+            "t-cache",
+        ],
+        "body": [
+            "t-cache=\"\"",
+        ],
+        "scope": "xml",
+    },
+    "[Owl] t-nocache attribute": {
+        "prefix": [
+            "t",
+            "t-nocache",
+        ],
+        "body": [
+            "t-nocache=\"\"",
+        ],
+        "isFileTemplate": false,
+        "scope": "xml",
+    },
+    "[Owl] t-debug attribute": {
+        "prefix": [
+            "t",
+            "t-debug",
+        ],
+        "body": [
+            "t-debug=\"\"",
+        ],
+        "scope": "xml",
+    },
+    "[Owl] t-log attribute": {
+        "prefix": [
+            "t",
+            "t-log",
+        ],
+        "body": [
+            "t-log=\"\"",
+        ],
+        "scope": "xml",
+    },
+    "[Owl] t-js element": {
+        "prefix": [
+            "t",
+            "t-js",
+        ],
+        "body": [
+            "<t t-js=\"context\">",
+            "   console.log();",
+            "</t>",
+        ],
+        "scope": "xml",
+    },
+}

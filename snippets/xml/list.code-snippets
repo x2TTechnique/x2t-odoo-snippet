@@ -1,0 +1,51 @@
+{
+    "List view": {
+        "prefix": [
+            "list",
+            "view",
+        ],
+        "body": [
+            "<record id=\"view_${1:MODEL_NAME}_tree\" model=\"ir.ui.view\">",
+            "    <field name=\"name\">${2:view.name}</field>",
+            "    <field name=\"model\">${3:model.name}</field>",
+            "    <field name=\"arch\" type=\"xml\">",
+            "        <list create=\"1\" edit=\"1\" delete=\"1\" import=\"1\"",
+            "              export_xlsx=\"1\" editable=\"top\" multi_edit=\"1\"",
+            "              open_form_view=\"1\" default_group_by=\"\"",
+            "              default_order=\"sequence,name desc\" limit=\"80\"",
+            "              groups_limit=\"40\" expand=\"0\"",
+            "              banner_route=\"/module/banner\" sample=\"1\">",
+            "            <field name=\"${6:name}\" widget=\"${7:}\" options=\"{}\"/>",
+            "        </list>",
+            "    </field>",
+            "</record>"
+        ],
+        "scope": "xml",
+    },
+    "[List] Control button element": {
+        "prefix": [
+            "control",
+            "button",
+        ],
+        "body": [
+            "<control>",
+            "   <create string=\"Add a item\"/>",
+            "   <create string=\"Add a section\" context=\"{'default_type': 'section'}\"/>",
+            "   <create string=\"Add a note\" context=\"{'default_type': 'note'}\"/>",
+            "</control>",
+        ],
+        "scope": "xml",
+    },
+    "[List] Groupby element": {
+        "prefix": [
+            "groupby"
+        ],
+        "body": [
+            "<groupby name=\"partner_id\">",
+            "   <button type=\"edit\" icon=\"fa-edit\" title=\"Edit\"/>",
+            "   <field name=\"email\"/>",
+            "</groupby>"
+        ],
+        "scope": "xml",
+    },
+}
