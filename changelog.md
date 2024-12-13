@@ -16,3 +16,4 @@
 | `2.2.4` | `19/11/2024` | Remove current when suggest field on xml                                                                   |
 | `3.0.0` | `1/12/2024`  | Seperator file to chunk file and replace `tree` to `list` with odoo 18, and flag version mapping with Odoo |
 | `3.0.1` | `1/12/2024`  | Write changelog file and readme                                                                            |
+| `3.1.0` | `11/12/2024`  | Change logo
