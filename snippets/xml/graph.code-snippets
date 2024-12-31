@@ -1,9 +1,6 @@
 {
     "Graph view": {
-        "prefix": [
-            "graph",
-            "view",
-        ],
+        "prefix": ["graph", "view"],
         "body": [
             "<record id=\"${0:view_MODEL_NAME_graph}\" model=\"ir.ui.view\">",
             "   <field name=\"name\">${1:VIEW_NAME}</field>",

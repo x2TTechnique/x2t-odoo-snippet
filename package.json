@@ -1,127 +1,315 @@
 {
-  "name": "tim-snippets",
-  "displayName": "Odoo Development Snippets",
-  "description": "Snippets for Odoo and Icons",
-  "version": "3.1.0",
-  "engines": {
-    "vscode": "^1.94.0"
-  },
-  "categories": [
-    "Snippets",
-    "Themes"
-  ],
-  "publisher": "BDT",
-  "contributes": {
-    "snippets": [
-      {
-        "language": "javascript",
-        "path": "./snippets/javascript/owl.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/javascript/es6.code-snippets"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/base.code-snippets"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/model.code-snippets"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/function.code-snippets"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/field.code-snippets"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python/attribute.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/form.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/list.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/kanban.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/pivot.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/activity.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/calendar.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/graph.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/search.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/menu.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/action.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/owl.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/common.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/attributes.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/gant.code-snippets"
-      },
-      {
-        "language": "xml",
-        "path": "./snippets/xml/setting.code-snippets"
-      }
+    "name": "tim-snippets",
+    "displayName": "Odoo Development Snippets",
+    "description": "Snippets for Odoo and Icons",
+    "version": "3.2.0",
+    "scripts": {},
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Snippets",
+        "Themes",
+        "Programming Languages",
+        "Formatters",
+        "Linters"
     ],
-    "iconThemes": [
-      {
-        "id": "tim-icons",
-        "label": "Tim Icons",
-        "path": "./tim-icon-theme.json"
-      }
+    "publisher": "BDT",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript/owl.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript/es6.code-snippets"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/python/base.code-snippets"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/python/model.code-snippets"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/python/function.code-snippets"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/python/field.code-snippets"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/python/attribute.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/form.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/list.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/kanban.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/pivot.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/activity.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/calendar.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/graph.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/search.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/menu.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/action.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/owl.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/common.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/attributes.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/gant.code-snippets"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/xml/setting.code-snippets"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "tim-odoo-icons",
+                "label": "Tim Odoo Icon",
+                "path": "./icons.json"
+            }
+        ],
+        "keybindings": [],
+        "languages": [
+            {
+                "id": "javascript",
+                "aliases": [
+                    "JavaScript",
+                    "js"
+                ],
+                "extensions": [
+                    ".js"
+                ],
+                "filenames": [
+                    "jsconfig.json"
+                ],
+                "filenamePatterns": [
+                    "*.js"
+                ],
+                "mimetypes": [
+                    "application/javascript",
+                    "text/javascript"
+                ]
+            },
+            {
+                "id": "typescript",
+                "aliases": [
+                    "TypeScript",
+                    "ts"
+                ],
+                "extensions": [
+                    ".ts",
+                    ".tsx"
+                ],
+                "filenames": [
+                    "tsconfig.json"
+                ],
+                "filenamePatterns": [
+                    "*.ts",
+                    "*.tsx"
+                ],
+                "mimetypes": [
+                    "application/typescript",
+                    "text/typescript"
+                ]
+            },
+            {
+                "id": "python",
+                "aliases": [
+                    "Python",
+                    "py"
+                ],
+                "extensions": [
+                    ".py"
+                ],
+                "filenames": [
+                    "requirements.txt",
+                    "setup.py"
+                ],
+                "filenamePatterns": [
+                    "*.py"
+                ],
+                "mimetypes": [
+                    "text/x-python"
+                ]
+            },
+            {
+                "id": "xml",
+                "aliases": [
+                    "XML"
+                ],
+                "extensions": [
+                    ".xml"
+                ],
+                "filenames": [
+                    "settings.xml"
+                ],
+                "filenamePatterns": [
+                    "*.xml"
+                ],
+                "mimetypes": [
+                    "application/xml",
+                    "text/xml"
+                ]
+            },
+            {
+                "id": "csv",
+                "aliases": [
+                    "CSV"
+                ],
+                "extensions": [
+                    ".csv"
+                ],
+                "filenames": [
+                    "data.csv"
+                ],
+                "filenamePatterns": [
+                    "*.csv"
+                ],
+                "mimetypes": [
+                    "text/csv"
+                ]
+            }
+        ],
+        "themes": [
+            {
+                "label": "Odoo Dark",
+                "id": "odoo.dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/odoo.dark.json"
+            }
+        ],
+        "breakpoints": [
+            {
+                "language": "javascript"
+            },
+            {
+                "language": "javascriptreact"
+            },
+            {
+                "language": "typescript"
+            },
+            {
+                "language": "typescriptreact"
+            },
+            {
+                "language": "python"
+            },
+            {
+                "language": "html"
+            },
+            {
+                "language": "css"
+            },
+            {
+                "language": "json"
+            }
+        ],
+        "commands": []
+    },
+    "extensionDependencies": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-python.python",
+        "ms-python.autopep8",
+        "ms-python.vscode-pylance",
+        "mechatroner.rainbow-csv",
+        "ms-python.debugpy",
+        "dotjoshjohnson.xml",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag"
+    ],
+    "icon": "assets/brand/icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/buiductuan-dev/snippets.git"
+    },
+    "keywords": [
+        "odoo",
+        "snippets",
+        "python",
+        "xml",
+        "javascript",
+        "csv"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^8.10.25",
+        "@types/vscode": "^1.51.0",
+        "tslint": "^5.16.0",
+        "typescript": "^3.4.5"
+    },
+    "languages": [
+        {
+            "id": "javascript",
+            "extensions": [
+                ".js",
+                ".jsx",
+                ".ts",
+                ".tsx"
+            ]
+        },
+        {
+            "id": "html",
+            "extensions": [
+                ".html"
+            ]
+        },
+        {
+            "id": "python",
+            "extensions": ".py"
+        },
+        {
+            "id": "xml",
+            "extensions": ".xml"
+        },
+        {
+            "id": "csv",
+            "extensions": ".csv"
+        }
     ]
-  },
-  "icon": "assets/icon.png",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:OrcCyber/snippets.git"
-  },
-  "keywords": [
-    "odoo",
-    "snippets",
-    "python",
-    "xml",
-    "javascript",
-    "csv"
-  ],
-  "license": "MIT"
 }

@@ -1,9 +1,6 @@
 {
     "Form view": {
-        "prefix": [
-            "form",
-            "view",
-        ],
+        "prefix": ["form", "view"],
         "body": [
             "<record id=\"view_MODEL_NAME_form\" model=\"ir.ui.view\">",
             "   <field name=\"name\">${1:view.name}</field>",
@@ -49,54 +46,28 @@
         "scope": "xml",
     },
     "[Form] Notebook": {
-        "prefix": [
-            "notebook",
-        ],
-        "body": [
-            "<notebook>",
-            "   <page string=\"${0:Description}\" name=\"${1:technical_name}\">",
-            "",
-            "   </page>",
-            "</notebook>",
-        ],
+        "prefix": ["notebook"],
+        "body": ["<notebook>", "   <page string=\"${0:Description}\" name=\"${1:technical_name}\">", "", "   </page>", "</notebook>"],
         "description": "Notebook in form view",
         "isFileTemplate": false,
-        "scope": "xml"
+        "scope": "xml",
     },
     "[Form] Tilte in form view": {
-        "prefix": [
-            "title",
-        ],
-        "body": [
-            "<div class=\"oe_title\">",
-            "   <h1>",
-            "       <field name=\"${0:$TM_CURRENT_WORD}\"/>",
-            "   </h1>",
-            "</div>",
-        ],
+        "prefix": ["title"],
+        "body": ["<div class=\"oe_title\">", "   <h1>", "       <field name=\"${0:$TM_CURRENT_WORD}\"/>", "   </h1>", "</div>"],
         "description": "Name title in form view.",
         "isFileTemplate": false,
         "scope": "xml",
     },
     "[Form] Attachment preview": {
-        "prefix": [
-            "attachment",
-            "preview",
-        ],
+        "prefix": ["attachment", "preview"],
         "body": "<div class=\"o_attachment_preview\"/>",
         "description": "Attachment preview inside form view",
         "scope": "xml",
         "isFileTemplate": false,
     },
     "[Form] (Followers + Acitivities + Messages) Sidebar": {
-        "prefix": [
-            "widget",
-            "chatter",
-            "mail",
-            "message",
-            "activity",
-            "follower",
-        ],
+        "prefix": ["widget", "chatter", "mail", "message", "activity", "follower"],
         "body": [
             "<div class=\"oe_chatter\">",
             "   <field name=\"message_follower_ids\" widget=\"mail_followers\" />",
@@ -106,10 +77,7 @@
         ],
     },
     "[Form] (Header + Button) element": {
-        "prefix": [
-            "header",
-            "button",
-        ],
+        "prefix": ["header", "button"],
         "body": [
             "<header>",
             "   <button type=\"object\" name=\"action_create_new\" string=\"Create document\" display=\"always\"/>",
@@ -118,10 +86,7 @@
         ],
     },
     "[Form] Button element": {
-        "prefix": [
-            "header",
-            "button",
-        ],
+        "prefix": ["header", "button"],
         "body": [
             "<header>",
             "   <button type=\"object\" name=\"action_create_new\" string=\"Create document\" display=\"always\"/>",
@@ -130,23 +95,12 @@
         ],
     },
     "Header element": {
-        "prefix": [
-            "header",
-            "button",
-        ],
-        "body": [
-            "<header>",
-            "",
-            "",
-            "</header>",
-        ],
-        "description": "Header"
+        "prefix": ["header", "button"],
+        "body": ["<header>", "", "", "</header>"],
+        "description": "Header",
     },
     "[Form] (Footer + Button) element": {
-        "prefix": [
-            "button",
-            "footer",
-        ],
+        "prefix": ["button", "footer"],
         "body": [
             "<footer>",
             "   <button string=\"Save\" special=\"save\" />",
@@ -157,37 +111,19 @@
         "scope": "xml",
     },
     "[Form] Footer element": {
-        "prefix": [
-            "button",
-            "footer",
-        ],
-        "body": [
-            "<footer>",
-            "",
-            "",
-            "</footer>",
-        ],
+        "prefix": ["button", "footer"],
+        "body": ["<footer>", "", "", "</footer>"],
         "scope": "xml",
     },
     "[Form] Statusbar widget": {
-        "prefix": [
-            "statusbar",
-        ],
-        "body": [
-            "<field name=\"state\" widget\"statusbar\"",
-            "       statusbar_visible=\"draft,post\"",
-            "       option=\"{}\"",
-            "/>"
-        ],
+        "prefix": ["statusbar"],
+        "body": ["<field name=\"state\" widget\"statusbar\"", "       statusbar_visible=\"draft,post\"", "       option=\"{}\"", "/>"],
         "description": "Statusbar",
         "isFileTemplate": false,
-        "scope": "xml"
+        "scope": "xml",
     },
     "[Form] Stat Button": {
-        "prefix": [
-            "button",
-            "stat",
-        ],
+        "prefix": ["button", "stat"],
         "body": [
             "<button name=\"ACTION\" type=\"object\" class=\"oe_stat_button\" icon=\"fa-edit\" help=\"Some content..\" >",
             "   <div class=\"o_field_widget o_stat_info\" >",
@@ -202,5 +138,4 @@
         ],
         "scope": "xml",
     },
-    
 }

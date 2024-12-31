@@ -1,67 +1,26 @@
 {
     "[ORM - Function] def create(self):": {
-        "prefix": [
-            "create",
-            "def"
-        ],
-        "body": [
-            "@api.model",
-            "def create(self,vals_list):",
-            "    return super().create(vals_list)"
-        ]
+        "prefix": ["create", "def"],
+        "body": ["@api.model", "def create(self,vals_list):", "    return super().create(vals_list)"],
     },
     "[ORM - Function] def write(self):": {
-        "prefix": [
-            "write",
-            "def"
-        ],
-        "body": [
-            "@api.model",
-            "def write(self, vals_list):",
-            "    return super().write(vals_list)"
-        ]
+        "prefix": ["write", "def"],
+        "body": ["@api.model", "def write(self, vals_list):", "    return super().write(vals_list)"],
     },
     "[ORM - Function] def unlink(self):": {
-        "prefix": [
-            "unlink",
-            "def",
-        ],
-        "body": [
-            "@api.model",
-            "def unlink(self):",
-            "    return super().unlink()"
-        ]
+        "prefix": ["unlink", "def"],
+        "body": ["@api.model", "def unlink(self):", "    return super().unlink()"],
     },
     "[ORM - Function] def default_get(self,fieldslist):": {
-        "prefix": [
-            "default",
-            "def",
-        ],
-        "body": [
-            "@api.model",
-            "def default_get(self, fieldslist):",
-            "    return super().default_get(fieldslist)"
-        ],
+        "prefix": ["default", "def"],
+        "body": ["@api.model", "def default_get(self, fieldslist):", "    return super().default_get(fieldslist)"],
     },
     "[ORM - Function] def name_create(self, name):": {
-        "prefix": [
-            "def",
-            "name",
-        ],
-        "body": [
-            "@api.model",
-            "def name_create(self, name):",
-            "    values = {",
-            "       \"name\": name",
-            "}",
-            "    return self.create(values).name_get()"
-        ],
+        "prefix": ["def", "name"],
+        "body": ["@api.model", "def name_create(self, name):", "    values = {", "       \"name\": name", "}", "    return self.create(values).name_get()"],
     },
     "[ORM - Function] def read_group(self, domain, fields, groupby, offset=0, limit=None, orderby=False, lazy=True):": {
-        "prefix": [
-            "def",
-            "read_group",
-        ],
+        "prefix": ["def", "read_group"],
         "body": [
             "@api.model",
             "def read_group(self, domain, fields, groupby, offset=0, limit=None, orderby=False, lazy=True):",
@@ -69,430 +28,184 @@
         ],
     },
     "[ORM - Function] def read_group(self, domain,fields_get(self, allfields, attributes):": {
-        "prefix": [
-            "def",
-            "fields_get",
-        ],
-        "body": [
-            "@api.model",
-            "def fields_get(self, allfields, attributes):",
-            "    return super().fields_get(allfields,attributes)",
-        ],
+        "prefix": ["def", "fields_get"],
+        "body": ["@api.model", "def fields_get(self, allfields, attributes):", "    return super().fields_get(allfields,attributes)"],
     },
     "[ORM - Utils] self.env['']._read_group(*args)": {
-        "prefix": [
-            "self",
-            "_read_group",
-        ],
-        "body": [
-            "self.env[\"${0:model.name}\"]._read_group(domain=[], groupby=[], aggregates=[], having=[], offset=0, limit=None, order=None)",
-        ],
+        "prefix": ["self", "_read_group"],
+        "body": ["self.env[\"${0:model.name}\"]._read_group(domain=[], groupby=[], aggregates=[], having=[], offset=0, limit=None, order=None)"],
     },
     "[ORM - Utils] self.env[''].search(*args)": {
-        "prefix": [
-            "self",
-            "search",
-        ],
-        "body": [
-            "self.env[\"\"].search(",
-            "    domain=[],",
-            "    offset=0,",
-            "    limit=None,",
-            "    order=None,",
-            ")"
-        ],
+        "prefix": ["self", "search"],
+        "body": ["self.env[\"\"].search(", "    domain=[],", "    offset=0,", "    limit=None,", "    order=None,", ")"],
     },
     "[ORM - Utils] self.env[''].browse([])": {
-        "prefix": [
-            "self",
-            "browse",
-        ],
-        "body": [
-            "self.env[\"\"].browse()",
-        ],
+        "prefix": ["self", "browse"],
+        "body": ["self.env[\"\"].browse()"],
     },
     "[ORM - Utils] self.env[''].search_count(*args)": {
-        "prefix": [
-            "self",
-            "search",
-            "count",
-        ],
-        "body": [
-            "self.env[\"\"].search_count(",
-            "    domain=[],",
-            "    limit=None,",
-            ")"
-        ],
+        "prefix": ["self", "search", "count"],
+        "body": ["self.env[\"\"].search_count(", "    domain=[],", "    limit=None,", ")"],
     },
     "[ORM - Utils] self.env[''].search_fetch(*args)": {
-        "prefix": [
-            "self",
-            "search",
-            "fetch",
-        ],
-        "body": [
-            "self.env[\"${0:model.name}\"].search_fetch(",
-            "    domain=[],",
-            "    fields=[\"\"],",
-            "    limit=None,",
-            "    order=None,",
-            ")"
-        ],
+        "prefix": ["self", "search", "fetch"],
+        "body": ["self.env[\"${0:model.name}\"].search_fetch(", "    domain=[],", "    fields=[\"\"],", "    limit=None,", "    order=None,", ")"],
     },
     "[ORM - Utils] self.env[''].name_search(*args)": {
-        "prefix": [
-            "self",
-            "search",
-            "name",
-        ],
-        "body": [
-            "self.env[\"\"].name_search(name=\"tuấn sad boy\", args=None, operator=\"ilike\", limit=100)",
-        ],
+        "prefix": ["self", "search", "name"],
+        "body": ["self.env[\"\"].name_search(name=\"tuấn sad boy\", args=None, operator=\"ilike\", limit=100)"],
     },
     "[ORM - Utils] self.env[''].fetch(*args)": {
-        "prefix": [
-            "self",
-            "fetch",
-        ],
-        "body": [
-            "self.env[\"\"].fetch(field_names=[\"${0:field1}\",\"${0:field2}\",\"${0:field3}\"])",
-        ],
+        "prefix": ["self", "fetch"],
+        "body": ["self.env[\"\"].fetch(field_names=[\"${0:field1}\",\"${0:field2}\",\"${0:field3}\"])"],
     },
     "[ORM - Utils] self.env[''].read(*args)": {
-        "prefix": [
-            "self",
-            "read",
-        ],
-        "body": [
-            "self.env[\"${0:model.name}\"].read(fields=[\"${0:field1}\",\"${0:field2}\",\"${0:field3}\"], load=None)",
-        ],
+        "prefix": ["self", "read"],
+        "body": ["self.env[\"${0:model.name}\"].read(fields=[\"${0:field1}\",\"${0:field2}\",\"${0:field3}\"], load=None)"],
     },
     "[ORM - Utils] self.ensure_one()": {
-        "prefix": [
-            "self",
-            "ensure_one",
-        ],
-        "body": [
-            "self.ensure_one()",
-        ],
+        "prefix": ["self", "ensure_one"],
+        "body": ["self.ensure_one()"],
     },
     "[ORM - Utils] self.get_metadata()": {
-        "prefix": [
-            "self",
-            "get_metadata",
-        ],
-        "body": [
-            "self.env[\"\"].get_metadata()",
-        ],
+        "prefix": ["self", "get_metadata"],
+        "body": ["self.env[\"\"].get_metadata()"],
     },
     "[ORM - Utils] self.filtered()": {
-        "prefix": [
-            "self",
-            "filtered",
-        ],
-        "body": [
-            "self.filtered(lambda r:r.id == 1)",
-        ],
+        "prefix": ["self", "filtered"],
+        "body": ["self.filtered(lambda r:r.id == 1)"],
     },
     "[ORM - Utils] self.filtered_domain([])": {
-        "prefix": [
-            "self",
-            "filtered_domain",
-        ],
-        "body": [
-            "self.filtered_domain([])",
-        ],
+        "prefix": ["self", "filtered_domain"],
+        "body": ["self.filtered_domain([])"],
     },
     "[ORM - Utils] self.mapped()": {
-        "prefix": [
-            "self",
-            "mapped",
-        ],
-        "body": [
-            "self.mapped()",
-        ],
+        "prefix": ["self", "mapped"],
+        "body": ["self.mapped()"],
     },
     "[ORM - Utils] self.sorted(*args)": {
-        "prefix": [
-            "self",
-            "sorted",
-        ],
-        "body": [
-            "self.sorted(key=\"${0:name}\",reverse=${1:False})",
-        ],
+        "prefix": ["self", "sorted"],
+        "body": ["self.sorted(key=\"${0:name}\",reverse=${1:False})"],
     },
     "[ORM - Utils] self.grouped(*args)": {
-        "prefix": [
-            "self",
-            "grouped",
-        ],
-        "body": [
-            "self.grouped(key=\"\")",
-        ],
+        "prefix": ["self", "grouped"],
+        "body": ["self.grouped(key=\"\")"],
     },
     "[Decorations] @api.depends": {
-        "prefix": [
-            "@api",
-            "depends",
-        ],
-        "body": [
-            "@api.depends(\"name\")",
-        ]
+        "prefix": ["@api", "depends"],
+        "body": ["@api.depends(\"name\")"],
     },
     "[Decorations] @api.constrains": {
-        "prefix": [
-            "@api",
-            "constrains",
-        ],
-        "body": [
-            "@api.constrains(\"name\",\"description\")",
-        ]
+        "prefix": ["@api", "constrains"],
+        "body": ["@api.constrains(\"name\",\"description\")"],
     },
     "[Decorations] @api.onchange": {
-        "prefix": [
-            "@api",
-            "onchange",
-        ],
-        "body": [
-            "@api.onchange(\"name\",\"description\")",
-        ]
+        "prefix": ["@api", "onchange"],
+        "body": ["@api.onchange(\"name\",\"description\")"],
     },
     "[Decorations] @api.depends_context": {
-        "prefix": [
-            "@api",
-            "depends_context",
-        ],
-        "body": [
-            "@api.depends_context(\"uid\",\"company\")",
-        ]
+        "prefix": ["@api", "depends_context"],
+        "body": ["@api.depends_context(\"uid\",\"company\")"],
     },
     "[Decorations] @api.returns": {
-        "prefix": [
-            "@api",
-            "returns",
-        ],
-        "body": [
-            "@api.returns(\"\")",
-        ]
+        "prefix": ["@api", "returns"],
+        "body": ["@api.returns(\"\")"],
     },
     "[Decorations] @api.autovacuum": {
-        "prefix": [
-            "@api",
-            "autovacuum",
-        ],
-        "body": [
-            "@api.autovacuum",
-        ]
+        "prefix": ["@api", "autovacuum"],
+        "body": ["@api.autovacuum"],
     },
     "[Decorations] @api.model_create_multi": {
-        "prefix": [
-            "@api",
-            "model_create_multi",
-        ],
-        "body": [
-            "@api.model_create_multi",
-        ]
+        "prefix": ["@api", "model_create_multi"],
+        "body": ["@api.model_create_multi"],
     },
     "[Decorations] @api.model": {
-        "prefix": [
-            "@api",
-            "model",
-        ],
-        "body": [
-            "@api.model",
-        ]
+        "prefix": ["@api", "model"],
+        "body": ["@api.model"],
     },
     "[Decorations] @api.ondelete": {
-        "prefix": [
-            "@api",
-            "model",
-        ],
-        "body": [
-            "@api.ondelete(at_uninstall=True)",
-        ]
+        "prefix": ["@api", "model"],
+        "body": ["@api.ondelete(at_uninstall=True)"],
     },
     "[Environment] self.ref(xml_id, raise_if_not_found=True)": {
-        "prefix": [
-            "self",
-            "ref",
-        ],
-        "body": [
-            "foo = self.env.ref(\"\",raise_if_not_found=True)",
-        ],
-        "description": "Return the record corresponding to the given xml_id"
+        "prefix": ["self", "ref"],
+        "body": ["foo = self.env.ref(\"\",raise_if_not_found=True)"],
+        "description": "Return the record corresponding to the given xml_id",
     },
     "[Environment] self.is_superuser()": {
-        "prefix": [
-            "self",
-            "env",
-        ],
-        "body": [
-            "self.is_superuser()",
-        ],
+        "prefix": ["self", "env"],
+        "body": ["self.is_superuser()"],
     },
     "[Environment] self.is_admin()": {
-        "prefix": [
-            "self",
-            "env",
-        ],
-        "body": [
-            "self.is_admin()",
-        ],
+        "prefix": ["self", "env"],
+        "body": ["self.is_admin()"],
     },
     "[Environment] self.is_system()": {
-        "prefix": [
-            "self",
-            "env",
-        ],
-        "body": [
-            "self.is_system()",
-        ],
+        "prefix": ["self", "env"],
+        "body": ["self.is_system()"],
     },
     "[Environment] self.env.context": {
-        "prefix": [
-            "self",
-            "env",
-            "context",
-        ],
-        "body": [
-            "context = self.env.context",
-            "# Update context here",
-            "context = self.env[\"\"].with_context(**context)",
-        ],
+        "prefix": ["self", "env", "context"],
+        "body": ["context = self.env.context", "# Update context here", "context = self.env[\"\"].with_context(**context)"],
     },
     "[Environment] self.env.user": {
-        "prefix": [
-            "self",
-            "env",
-            "context",
-        ],
-        "body": [
-            "user = self.env.user",
-            "# Update context user here",
-            "user = self.env[\"\"].with_user(user)",
-        ],
+        "prefix": ["self", "env", "context"],
+        "body": ["user = self.env.user", "# Update context user here", "user = self.env[\"\"].with_user(user)"],
     },
     "[Environment] self.with_env()": {
-        "prefix": [
-            "self",
-            "with_env",
-            "env",
-        ],
-        "body": [
-            "self.with_env()",
-        ],
+        "prefix": ["self", "with_env", "env"],
+        "body": ["self.with_env()"],
     },
     "[Environment] self.sudo()": {
-        "prefix": [
-            "self",
-            "sudo",
-            "env",
-        ],
-        "body": [
-            "self.sudo()",
-        ],
+        "prefix": ["self", "sudo", "env"],
+        "body": ["self.sudo()"],
     },
     "[Environment] self.flush_all()": {
-        "prefix": [
-            "flush_all",
-            "self",
-        ],
-        "body": [
-            "self.flush_all()",
-        ]
+        "prefix": ["flush_all", "self"],
+        "body": ["self.flush_all()"],
     },
     "[Environment] self.flush_model(*args)": {
-        "prefix": [
-            "flush_model",
-            "self",
-        ],
-        "body": [
-            "self.flush_model([\"${1:field1}\",\"${2:field2}\",\"${3:field3}\"])",
-        ]
+        "prefix": ["flush_model", "self"],
+        "body": ["self.flush_model([\"${1:field1}\",\"${2:field2}\",\"${3:field3}\"])"],
     },
     "[Environment] self.flush_recordset(*aargsrs)": {
-        "prefix": [
-            "flush_recordset",
-            "self",
-        ],
-        "body": [
-            "self.flush_recordset([\"${1:field1}\",\"${2:field2}\",\"${3:field3}\"])",
-        ]
+        "prefix": ["flush_recordset", "self"],
+        "body": ["self.flush_recordset([\"${1:field1}\",\"${2:field2}\",\"${3:field3}\"])"],
     },
     "[Environment] self.invalidate_all(flush=True)": {
-        "prefix": [
-            "invalidate_all",
-            "self",
-        ],
-        "body": [
-            "self.invalidate_all(flush=${0:True})",
-        ]
+        "prefix": ["invalidate_all", "self"],
+        "body": ["self.invalidate_all(flush=${0:True})"],
     },
     "[Environment] self.invalidate_model(*args)": {
-        "prefix": [
-            "invalidate_model",
-            "self",
-        ],
-        "body": [
-            "self.invalidate_model(fnames=[\"${1:field1}\",\"${2:field2}\",\"${3:field3}\"],flush=True)",
-        ]
+        "prefix": ["invalidate_model", "self"],
+        "body": ["self.invalidate_model(fnames=[\"${1:field1}\",\"${2:field2}\",\"${3:field3}\"],flush=True)"],
     },
     "[Environment] self.modified(*args)": {
-        "prefix": [
-            "modified",
-            "self",
-        ],
-        "body": [
-            "self.modified(fnames=[\"${1:field1}\",\"${2:field2}\",\"${3:field3}\"],create=False,before=False)",
-        ]
+        "prefix": ["modified", "self"],
+        "body": ["self.modified(fnames=[\"${1:field1}\",\"${2:field2}\",\"${3:field3}\"],create=False,before=False)"],
     },
     "[Exception] UserError(message)": {
-        "prefix": [
-            "exception",
-            "raise",
-        ],
-        "body": [
-            "raise UserError(message=\"Something went wrong\")",
-        ]
+        "prefix": ["exception", "raise"],
+        "body": ["raise UserError(message=\"Something went wrong\")"],
     },
     "[Exception] AccessError(message)": {
-        "prefix": [
-            "raise",
-        ],
-        "body": [
-            "raise AccessError(message=\"Access Denied\")",
-        ]
+        "prefix": ["raise"],
+        "body": ["raise AccessError(message=\"Access Denied\")"],
     },
     "[Exception] CacheMiss(record, field)": {
-        "prefix": [
-            "raise",
-        ],
-        "body": [
-            "raise UserError(record=records,field=field)",
-        ]
+        "prefix": ["raise"],
+        "body": ["raise UserError(record=records,field=field)"],
     },
     "[Exception] MissingError(message)": {
-        "prefix": [
-            "raise",
-        ],
-        "body": [
-            "raise MissingError(message=\"Something went wrong\")",
-        ]
+        "prefix": ["raise"],
+        "body": ["raise MissingError(message=\"Something went wrong\")"],
     },
     "[Exception] ValidationError(message)": {
-        "prefix": [
-            "raise",
-        ],
-        "body": [
-            "raise ValidationError(message=\"Something went wrong\")",
-        ]
+        "prefix": ["raise"],
+        "body": ["raise ValidationError(message=\"Something went wrong\")"],
     },
     "[Exception] RedirectWarning(message, action, button_text, additional_context=None)": {
-        "prefix": [
-            "raise",
-        ],
-        "body": [
-            "raise RedirectWarning(message, action, button_text, additional_context=None)",
-        ]
+        "prefix": ["raise"],
+        "body": ["raise RedirectWarning(message, action, button_text, additional_context=None)"],
     },
 }

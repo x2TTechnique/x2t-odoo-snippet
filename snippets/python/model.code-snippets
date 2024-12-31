@@ -1,9 +1,6 @@
 {
     "[Model] Model": {
-        "prefix": [
-            "class",
-            "model"
-        ],
+        "prefix": ["class", "model"],
         "body": [
             "# -*- coding: utf-8 -*-",
             "# 1 : imports of python lib",
@@ -17,14 +14,10 @@
             "    _name = \"foo\"",
             "    _description = \"Foo Model\"",
             "    _auto= True",
-        ]
+        ],
     },
     "[Model] Transient": {
-        "prefix": [
-            "transient",
-            "class",
-            "model"
-        ],
+        "prefix": ["transient", "class", "model"],
         "body": [
             "# -*- coding: utf-8 -*-",
             "# 1 : imports of python lib",
@@ -42,14 +35,10 @@
             "    _description = \"Foo Model\"",
             "    _transient_max_hours = 1.0",
             "    _transient_max_count = 0",
-        ]
+        ],
     },
     "[Model] Abtract": {
-        "prefix": [
-            "abtract",
-            "class",
-            "model"
-        ],
+        "prefix": ["abtract", "class", "model"],
         "body": [
             "# -*- coding: utf-8 -*-",
             "# 1 : imports of python lib",
@@ -61,6 +50,6 @@
             "    _inherit = \"foo\"",
             "    _name = \"foo\"",
             "    _description = \"Foo Model\"",
-        ]
+        ],
     },
 }

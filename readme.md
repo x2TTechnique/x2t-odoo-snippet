@@ -1,23 +1,64 @@
 <div style="border: 2px solid #000; padding: 16px; border-radius: 8px;">
+<section>
 
-## 📢 **Important Announcement**
+## 📢 **IMPORTANT**
 
-Starting from **Odoo 18**, we will align the versioning of our snippets with the respective Odoo version.  
-This change is made to help you easily select the appropriate snippets for the version of Odoo you are currently using.
+</section>
+
+<article>
+Starting from <b>Odoo 18</b> , we will align the versioning of our snippets with the respective Odoo version.
+This change is made to help you easily select the appropriate snippets for the version of Odoo you are currently
+using.
 
 Please ensure you choose the snippets that match your Odoo version to avoid compatibility issues.
 
 Thank you for your understanding and support! 🙌
 
-Best regards,  
-**Bùi Đức Tuấn**
+Best regards,
 
+<b>Bùi Đức Tuấn</b>
+
+</article>
+
+<div align="center">
+    <a href="www.linkedin.com/in/buiductuan-dev">
+        <img src="./assets/images/linkedin.png"
+            width="30" height="30" /></a>
+    <a href="#">
+        <img src="./assets/images/twitter.png"
+            width="30" height="30" alt="twitter logo" />
+    </a>
+    <a href="https://www.youtube.com/@TimOdooDeveloper">
+        <img src="./assets/images/youtube.png"
+            width="30" height="30" alt="youtube logo" />
+    </a>
+    <a href="https://www.facebook.com/buiductuan.dev">
+        <img src="./assets//images/facebook.png"
+            width="30" height="30" alt="facebook logo" />
+    </a>
+    <a href="mailto:buiductuan.dev@gmail.com">
+        <img src="./assets/images/gmail.png"
+            width="30" height="30" alt="gmail logo" />
+    </a>
+    <a href="https://www.instagram.com/buiductuan.dev/">
+        <img src="./assets/images/instagram.png"
+            width="30" height="30" alt="instagram logo" />
+    </a>
+     <a href="https://t.me/buiductuan12081995">
+        <img src="./assets/images/telegram.png"
+            width="30" height="30" alt="instagram logo" />
+    </a>
+</div>
 </div>
 
 ---
 
-# VS Code Snippets for Odoo Development
+###
 
+<div align="center">
+<h1>Odoo Extension</h1>
+  <img height="200" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnVybDl3bDVwZDV6bGk0MG01bWlkZThtZ3dyMGVubnM4amhmc3d0bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/MF7oH80ZFs2RF1OqLz/giphy.gif"  />
+</div>
 This repository provides a collection of VS Code snippets for efficient Odoo development in JavaScript, XML, and Python. The snippets are designed to help developers quickly generate common code structures and components.
 
 # Usage

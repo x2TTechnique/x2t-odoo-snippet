@@ -1,0 +1,365 @@
+{
+    "iconDefinitions": {
+        "fodoo": {
+            "iconPath": "./assets/icons/fodoo.svg"
+        },
+        "fowl": {
+            "iconPath": "./assets/icons/fowl.svg"
+        },
+        "freport": {
+            "iconPath": "./assets/icons/freport.svg"
+        },
+        "fgithub": {
+            "iconPath": "./assets/icons/fgithub.svg"
+        },
+        "fgitlab": {
+            "iconPath": "./assets/icons/fgitlab.svg"
+        },
+        "fcontroller": {
+            "iconPath": "./assets/icons/fcontroller.svg"
+        },
+        "fvscode": {
+            "iconPath": "./assets/icons/fvscode.svg"
+        },
+        "ftest": {
+            "iconPath": "./assets/icons/ftest.svg"
+        },
+        "flinux": {
+            "iconPath": "./assets/icons/flinux.svg"
+        },
+        "fi18n": {
+            "iconPath": "./assets/icons/fi18n.svg"
+        },
+        "fmodel": {
+            "iconPath": "./assets/icons/fmodel.svg"
+        },
+        "frouter": {
+            "iconPath": "./assets/icons/frouter.svg"
+        },
+        "fplugin": {
+            "iconPath": "./assets/icons/fplugin.svg"
+        },
+        "fpackage": {
+            "iconPath": "./assets/icons/fpackage.svg"
+        },
+        "fdatabase": {
+            "iconPath": "./assets/icons/fdatabase.svg"
+        },
+        "fcomponent": {
+            "iconPath": "./assets/icons/fcomponent.svg"
+        },
+        "fapp": {
+            "iconPath": "./assets/icons/fapp.svg"
+        },
+        "fapi": {
+            "iconPath": "./assets/icons/fapi.svg"
+        },
+        "fenvironment": {
+            "iconPath": "./assets/icons/fenvironment.svg"
+        },
+        "fdocs": {
+            "iconPath": "./assets/icons/fdocs.svg"
+        },
+        "fcore": {
+            "iconPath": "./assets/icons/fcore.svg"
+        },
+        "fdownload": {
+            "iconPath": "./assets/icons/fdownload.svg"
+        },
+        "fview": {
+            "iconPath": "./assets/icons/fview.svg"
+        },
+        "fvideo": {
+            "iconPath": "./assets/icons/fvideo.svg"
+        },
+        "futil": {
+            "iconPath": "./assets/icons/futil.svg"
+        },
+        "funity": {
+            "iconPath": "./assets/icons/funity.svg"
+        },
+        "fui": {
+            "iconPath": "./assets/icons/fui.svg"
+        },
+        "fsnippets": {
+            "iconPath": "./assets/icons/fsnippets.svg"
+        },
+        "ftools": {
+            "iconPath": "./assets/icons/ftools.svg"
+        },
+        "ftemplates": {
+            "iconPath": "./assets/icons/ftemplates.svg"
+        },
+        "fsecurity": {
+            "iconPath": "./assets/icons/fsecurity.svg"
+        },
+        "fassets": {
+            "iconPath": "./assets/icons/fassets.svg"
+        },
+        "fpublic": {
+            "iconPath": "./assets/icons/fpublic.svg"
+        },
+        "fmarkdown": {
+            "iconPath": "./assets/icons/fmarkdown.svg"
+        },
+        "fmessage": {
+            "iconPath": "./assets/icons/fmessage.svg"
+        },
+        "fmiddlware": {
+            "iconPath": "./assets/icons/fmiddlware.svg"
+        },
+        "fclient": {
+            "iconPath": "./assets/icons/fclient.svg"
+        },
+        "fcommand": {
+            "iconPath": "./assets/icons/fcommand.svg"
+        },
+        "fconfig": {
+            "iconPath": "./assets/icons/fconfig.svg"
+        },
+        "fconnection": {
+            "iconPath": "./assets/icons/fconnection.svg"
+        },
+        "fcontext": {
+            "iconPath": "./assets/icons/fcontext.svg"
+        },
+        "fhook": {
+            "iconPath": "./assets/icons/fhook.svg"
+        },
+        "py": {
+            "iconPath": "./assets/icons/py.svg"
+        },
+        "js": {
+            "iconPath": "./assets/icons/js.svg"
+        },
+        "xml": {
+            "iconPath": "./assets/icons/xml.svg"
+        },
+        "html": {
+            "iconPath": "./assets/icons/html.svg"
+        },
+        "css": {
+            "iconPath": "./assets/icons/css.svg"
+        },
+        "scss": {
+            "iconPath": "./assets/icons/scss.svg"
+        },
+        "sass": {
+            "iconPath": "./assets/icons/sass.svg"
+        },
+        "svg": {
+            "iconPath": "./assets/icons/svg.svg"
+        },
+        "dart": {
+            "iconPath": "./assets/icons/dart.svg"
+        },
+        "git": {
+            "iconPath": "./assets/icons/git.svg"
+        },
+        "jsx": {
+            "iconPath": "./assets/icons/react.svg"
+        },
+        "webpack": {
+            "iconPath": "./assets/icons/webpack.svg"
+        },
+        "rb": {
+            "iconPath": "./assets/icons/rb.svg"
+        },
+        "cs": {
+            "iconPath": "./assets/icons/cs.svg"
+        },
+        "json": {
+            "iconPath": "./assets/icons/json.svg"
+        },
+        "vagrant": {
+            "iconPath": "./assets/icons/vagrant.svg"
+        },
+        "ts": {
+            "iconPath": "./assets/icons/ts.svg"
+        },
+        "md": {
+            "iconPath": "./assets/icons/md.svg"
+        },
+        "zip": {
+            "iconPath": "./assets/icons/zip.svg"
+        },
+        "sql": {
+            "iconPath": "./assets/icons/fdatabase.svg"
+        },
+        "gemfile": {
+            "iconPath": "./assets/icons/gemfile.svg"
+        },
+        "font": {
+            "iconPath": "./assets/icons/font.svg"
+        },
+        "po": {
+            "iconPath": "./assets/icons/po.svg"
+        },
+        "log": {
+            "iconPath": "./assets/icons/log.svg"
+        },
+        "tim": {
+            "iconPath": "./assets/icons/tim.svg"
+        },
+        "image": {
+            "iconPath": "./assets/icons/image.svg"
+        },
+        "pdf": {
+            "iconPath": "./assets/icons/pdf.svg"
+        },
+        "go": {
+            "iconPath": "./assets/icons/go.svg"
+        },
+        "exe": {
+            "iconPath": "./assets/icons/exe.svg"
+        },
+        "jenkins": {
+            "iconPath": "./assets/icons/jenkins.svg"
+        },
+        "cmake": {
+            "iconPath": "./assets/icons/cmake.svg"
+        },
+        "conf": {
+            "iconPath": "./assets/icons/conf.svg"
+        }
+    },
+    "folderNames": {
+        "odoo": "fodoo",
+        "addons": "fodoo",
+        "16c": "fodoo",
+        "17c": "fodoo",
+        "18c": "fodoo",
+        "16e": "fodoo",
+        "17e": "fodoo",
+        "18e": "fodoo",
+        "static": "fowl",
+        "src": "fowl",
+        "github": "fgithub",
+        "gitlab": "fgitlab",
+        "i18n": "fi18n",
+        ".vscode": "fvscode",
+        "vscode": "fvscode",
+        "controllers": "fcontroller",
+        "controller": "fcontroller",
+        "models": "fmodel",
+        "model": "fmodel",
+        "packages": "fpackage",
+        "package": "fpackage",
+        "plugins": "fplugin",
+        "plugin": "fplugin",
+        "routers": "frouter",
+        "router": "frouter",
+        "database": "fdatabase",
+        "databases": "fdatabase",
+        "tests": "ftest",
+        "test": "ftest",
+        "components": "fcomponent",
+        "component": "fcomponent",
+        "app": "fapp",
+        "apps": "fapp",
+        "api": "fapi",
+        "apis": "fapi",
+        "environments": "fenvironment",
+        "environment": "fenvironment",
+        "envs": "fenvironment",
+        "env": "fenvironment",
+        "documents": "fdocs",
+        "document": "fdocs",
+        "docs": "fdocs",
+        "core": "fcore",
+        "cores": "fcore",
+        "download": "fdownload",
+        "downloads": "fdownload",
+        "views": "fui",
+        "view": "fview",
+        "video": "fvideo",
+        "videos": "fvideo",
+        "utils": "futil",
+        "util": "futil",
+        "unity": "funity",
+        "unityhub": "funity",
+        "jenkins": "jenkins",
+        "snippets": "fsnippets",
+        "tools": "ftools",
+        "tool": "ftools",
+        "template": "ftemplates",
+        "templates": "ftemplates",
+        "security": "fsecurity",
+        "private": "fsecurity",
+        "assets": "fassets",
+        "asset": "fassets",
+        "images": "fimages",
+        "image": "fimages",
+        "pictures": "fimages",
+        "picture": "fimages",
+        "public": "fpublic",
+        "message": "fmessage",
+        "messages": "fmessage",
+        "markdown": "fmarkdown",
+        "markdowns": "fmarkdown",
+        "middlware": "fmiddlware",
+        "middlwares": "fmiddlware",
+        "configurations": "fconfig",
+        "configuration": "fconfig",
+        "config": "fconfig",
+        "contexts": "fcontext",
+        "contextual": "fcontext",
+        "context": "fcontext",
+        "connection": "fconnection",
+        "connections": "fconnection",
+        "connect": "fconnection",
+        "command": "fcommand",
+        "commands": "fcommand",
+        "client": "fclient",
+        "clients": "fclient",
+        "hook": "fhook",
+        "hooks": "fhook"
+    },
+    "folder": "flinux",
+    "fileExtensions": {
+        "js": "js",
+        "py": "py",
+        "xml": "xml",
+        "html": "html",
+        "css": "css",
+        "scss": "scss",
+        "sass": "sass",
+        "svg": "svg",
+        "git": "git",
+        "dart": "dart",
+        "jsx": "jsx",
+        "rb": "rb",
+        "cs": "cs",
+        "json": "json",
+        "vscode": "fvscode",
+        "ts": "ts",
+        "md": "md",
+        "zip": "zip",
+        "sql": "sql",
+        "font": "font",
+        "po": "po",
+        "log": "log",
+        "png": "image",
+        "jpg": "image",
+        "jpeg": "image",
+        "pdf": "pdf",
+        "go": "go",
+        "exe": "exe",
+        "vsix": "fvscode",
+        "cmake": "cmark",
+        "conf": "conf"
+    },
+    "fileNames": {
+        ".gitignore": "git",
+        ".gitmodules": "git",
+        ".vscodeignore": "git",
+        "webpack.config.js": "webpack",
+        "webpack.config.dev.js": "webpack",
+        "webpack.config.prod.js": "webpack",
+        "webpack.config.test.js": "webpack",
+        "gemfile": "gemfile",
+        "vagrant": "vagrant",
+        "jenkins": "jenkins"
+    },
+    "file": "fodoo"
+}

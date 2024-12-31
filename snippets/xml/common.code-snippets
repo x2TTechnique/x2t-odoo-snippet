@@ -1,102 +1,54 @@
 {
     "XML elements": {
-        "prefix": [
-            "xml",
-        ],
-        "body": [
-            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
-        ],
+        "prefix": ["xml"],
+        "body": ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>"],
         "description": "XML tag",
         "isFileTemplate": false,
         "scope": "xml",
     },
     "Odoo elements": {
-        "prefix": [
-            "odoo",
-        ],
-        "body": [
-            "<odoo>",
-            "",
-            "",
-            "</odoo>",
-        ],
+        "prefix": ["odoo"],
+        "body": ["<odoo>", "", "", "</odoo>"],
         "description": "Odoo tag",
         "isFileTemplate": false,
         "scope": "xml",
     },
     "Data elements": {
-        "prefix": [
-            "data"
-        ],
-        "body": [
-            "<data noupdate=\"${0:0}\">",
-            "",
-            "</data>",
-        ],
+        "prefix": ["data"],
+        "body": ["<data noupdate=\"${0:0}\">", "", "</data>"],
         "description": "Data tag",
         "isFileTemplate": false,
-        "scope": "xml"
+        "scope": "xml",
     },
     "XML + Odoo + Data elements": {
-        "prefix": [
-            "data"
-        ],
-        "body": [
-            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
-            "<odoo>",
-            "   <data noupdate=\"${0:0}\">",
-            "",
-            "",
-            "   </data>",
-            "</odoo>",
-        ],
+        "prefix": ["data"],
+        "body": ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>", "<odoo>", "   <data noupdate=\"${0:0}\">", "", "", "   </data>", "</odoo>"],
         "description": "Data tag",
         "isFileTemplate": false,
-        "scope": "xml"
+        "scope": "xml",
     },
     "Seperator elements": {
-        "prefix": [
-            "seperator",
-        ],
-        "body": [
-            "<seperator/>"
-        ],
+        "prefix": ["seperator"],
+        "body": ["<seperator/>"],
         "isFileTemplate": false,
-        "scope": "xml"
+        "scope": "xml",
     },
     "Newline elements": {
-        "prefix": [
-            "newline",
-        ],
-        "body": [
-            "<newline/>"
-        ],
+        "prefix": ["newline"],
+        "body": ["<newline/>"],
     },
     "Field empty elements": {
-        "prefix": [
-            "field",
-        ],
-        "body": [
-            "<field name=\"${0:}\" />",
-        ],
-        "description": "Field"
+        "prefix": ["field"],
+        "body": ["<field name=\"${0:}\" />"],
+        "description": "Field",
     },
     "Field open & close element": {
-        "prefix": [
-            "field",
-        ],
-        "body": [
-            "<field name=\"${1:}\">",
-            "",
-            "</field>",
-        ],
-        "description": "Field"
+        "prefix": ["field"],
+        "body": ["<field name=\"${1:}\">", "", "</field>"],
+        "description": "Field",
     },
     "[Inherit] View elements": {
-        "prefix": [
-            "inherit",
-            "view",
-        ],
+        "prefix": ["inherit", "view"],
         "body": [
             "<record id=\"view_${0:VIEW_NAME}_inherit\" model=\"ir.ui.view\">",
             "   <field name=\"name\">${1:VIEW NAME}</field>",
@@ -105,43 +57,24 @@
             "   <field name=\"arch\" type=\"xml\">",
             "",
             "   </field>",
-            "</record>"
-        ]
+            "</record>",
+        ],
     },
     "[Inherit] Attribute elements": {
-        "prefix": [
-            "attribute",
-            "inherit",
-        ],
-        "body": [
-            "<attribute name=\"${0:}\"></attribute>",
-        ],
+        "prefix": ["attribute", "inherit"],
+        "body": ["<attribute name=\"${0:}\"></attribute>"],
         "description": "Attribute inherit",
         "isFileTemplate": false,
-        "scope": "xml"
+        "scope": "xml",
     },
     "[Inherit] Field elements": {
-        "prefix": [
-            "field",
-            "inherit",
-        ],
-        "body": [
-            "<field name=\"${0:}\" position=\"\">",
-            "",
-            "</field>"
-        ],
-        "scope": "xml"
+        "prefix": ["field", "inherit"],
+        "body": ["<field name=\"${0:}\" position=\"\">", "", "</field>"],
+        "scope": "xml",
     },
     "[Inherit] Xpath DOM elements": {
-        "prefix": [
-            "xpath",
-            "inherit",
-        ],
-        "body": [
-            "<xpath expr=\"${0:}\" position=\"\">",
-            "",
-            "</xpath>"
-        ],
+        "prefix": ["xpath", "inherit"],
+        "body": ["<xpath expr=\"${0:}\" position=\"\">", "", "</xpath>"],
         "scope": "xml",
     },
 }

@@ -1,8 +1,6 @@
 {
     "[__manifest__.py] Manifest file": {
-        "prefix": [
-            "manifest",
-        ],
+        "prefix": ["manifest"],
         "body": [
             "# -*- coding: utf-8 -*-",
             "{",
@@ -53,17 +51,11 @@
             "       \"web.assets_common\": [],",
             "       \"web.qunit_suite_tests\": [],",
             "    }",
-            "}"
+            "}",
         ],
     },
     "[__init__.py] Init file": {
-        "prefix": [
-            "init",
-        ],
-        "body": [
-            "# -*- coding: utf-8 -*-",
-            "from . import models",
-            "from . import controllers"
-        ]
+        "prefix": ["init"],
+        "body": ["# -*- coding: utf-8 -*-", "from . import models", "from . import controllers"],
     },
 }

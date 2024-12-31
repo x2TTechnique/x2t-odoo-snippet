@@ -1,195 +1,82 @@
 {
     "[ES6] Arrow Function": {
-        "prefix": [
-            "arrow",
-            "function"
-        ],
-        "body": [
-            "const ${0:functionName} = (${1:params}) => {",
-            "  ${2:// Your code}",
-            "};"
-        ]
+        "prefix": ["arrow", "function"],
+        "body": ["const ${0:functionName} = (${1:params}) => {", "  ${2:// Your code}", "};"],
     },
     "[ES6] Default Parameter": {
-        "prefix": [
-            "default",
-            "param"
-        ],
-        "body": [
-            "function ${1:functionName}(${2:param} = ${3:defaultValue}) {",
-            "  ${0:// Your code}",
-            "}"
-        ]
+        "prefix": ["default", "param"],
+        "body": ["function ${1:functionName}(${2:param} = ${3:defaultValue}) {", "  ${0:// Your code}", "}"],
     },
     "[ES6] Destructuring Assignment": {
-        "prefix": [
-            "destructure"
-        ],
-        "body": [
-            "const { ${1:prop1}, ${2:prop2} } = ${3:object};"
-        ]
+        "prefix": ["destructure"],
+        "body": ["const { ${1:prop1}, ${2:prop2} } = ${3:object};"],
     },
     "[ES6] Template Literals": {
-        "prefix": [
-            "template",
-            "literal"
-        ],
-        "body": [
-            "const message = `Hello, ${1:name}`;"
-        ]
+        "prefix": ["template", "literal"],
+        "body": ["const message = `Hello, ${1:name}`;"],
     },
     "[ES6] Enhanced Object Literals": {
-        "prefix": [
-            "object",
-            "enhanced"
-        ],
-        "body": [
-            "const obj = {",
-            "  ${1:key}: ${2:value},",
-            "  [${3:dynamicKey}]: ${4:dynamicValue}",
-            "};"
-        ]
+        "prefix": ["object", "enhanced"],
+        "body": ["const obj = {", "  ${1:key}: ${2:value},", "  [${3:dynamicKey}]: ${4:dynamicValue}", "};"],
     },
     "[ES6] Class Declaration": {
-        "prefix": [
-            "class"
-        ],
-        "body": [
-            "class ${0:ClassName} {",
-            "  constructor(${1:args}) {",
-            "    ${2:// Your code}",
-            "  }",
-            "}"
-        ]
+        "prefix": ["class"],
+        "body": ["class ${0:ClassName} {", "  constructor(${1:args}) {", "    ${2:// Your code}", "  }", "}"],
     },
     "[ES6] Import Statement": {
-        "prefix": [
-            "import"
-        ],
-        "body": [
-            "import { ${1:module} } from '${2:modulePath}';"
-        ]
+        "prefix": ["import"],
+        "body": ["import { ${1:module} } from '${2:modulePath}';"],
     },
     "[ES6] Export Statement": {
-        "prefix": [
-            "export"
-        ],
-        "body": [
-            "export { ${1:module} };"
-        ]
+        "prefix": ["export"],
+        "body": ["export { ${1:module} };"],
     },
     "[ES6] For...of Loop": {
-        "prefix": [
-            "forof"
-        ],
-        "body": [
-            "for (const ${1:item} of ${2:array}) {",
-            "  ${0:// Your code}",
-            "}"
-        ]
+        "prefix": ["forof"],
+        "body": ["for (const ${1:item} of ${2:array}) {", "  ${0:// Your code}", "}"],
     },
     "[ES6] For...in Loop": {
-        "prefix": [
-            "forin"
-        ],
-        "body": [
-            "for (const ${1:key} in ${2:object}) {",
-            "  ${0:// Your code}",
-            "}"
-        ]
+        "prefix": ["forin"],
+        "body": ["for (const ${1:key} in ${2:object}) {", "  ${0:// Your code}", "}"],
     },
     "[ES6] Promise": {
-        "prefix": [
-            "promise"
-        ],
-        "body": [
-            "const ${1:promiseName} = new Promise((resolve, reject) => {",
-            "  ${2:// Your code}",
-            "});"
-        ]
+        "prefix": ["promise"],
+        "body": ["const ${1:promiseName} = new Promise((resolve, reject) => {", "  ${2:// Your code}", "});"],
     },
     "[ES6] Async Function": {
-        "prefix": [
-            "async"
-        ],
-        "body": [
-            "async function ${1:functionName}(${2:params}) {",
-            "  ${3:// Your code}",
-            "}"
-        ]
+        "prefix": ["async"],
+        "body": ["async function ${1:functionName}(${2:params}) {", "  ${3:// Your code}", "}"],
     },
     "[ES6] Await": {
-        "prefix": [
-            "await"
-        ],
-        "body": [
-            "const ${1:result} = await ${2:promise};"
-        ]
+        "prefix": ["await"],
+        "body": ["const ${1:result} = await ${2:promise};"],
     },
     "[ES6] Set": {
-        "prefix": [
-            "set"
-        ],
-        "body": [
-            "const ${1:setName} = new Set([${2:value1}, ${3:value2}]);"
-        ]
+        "prefix": ["set"],
+        "body": ["const ${1:setName} = new Set([${2:value1}, ${3:value2}]);"],
     },
     "[ES6] Map": {
-        "prefix": [
-            "map"
-        ],
-        "body": [
-            "const ${1:mapName} = new Map([",
-            "  [${2:key1}, ${3:value1}],",
-            "  [${4:key2}, ${5:value2}]",
-            "]);"
-        ]
+        "prefix": ["map"],
+        "body": ["const ${1:mapName} = new Map([", "  [${2:key1}, ${3:value1}],", "  [${4:key2}, ${5:value2}]", "]);"],
     },
     "[ES6] Spread Operator": {
-        "prefix": [
-            "spread"
-        ],
-        "body": [
-            "const ${1:newObject} = { ...${2:existingObject} };"
-        ]
+        "prefix": ["spread"],
+        "body": ["const ${1:newObject} = { ...${2:existingObject} };"],
     },
     "[ES6] Rest Parameter": {
-        "prefix": [
-            "rest"
-        ],
-        "body": [
-            "function ${1:functionName}(...${2:args}) {",
-            "  ${3:// Your code}",
-            "}"
-        ]
+        "prefix": ["rest"],
+        "body": ["function ${1:functionName}(...${2:args}) {", "  ${3:// Your code}", "}"],
     },
     "[ES6] Module Export Default": {
-        "prefix": [
-            "export",
-            "default"
-        ],
-        "body": [
-            "export default ${1:moduleName};"
-        ]
+        "prefix": ["export", "default"],
+        "body": ["export default ${1:moduleName};"],
     },
     "[ES6] SetTimeout": {
-        "prefix": [
-            "setTimeout"
-        ],
-        "body": [
-            "setTimeout(() => {",
-            "  ${1:// Your code}",
-            "}, ${2:1000});"
-        ]
+        "prefix": ["setTimeout"],
+        "body": ["setTimeout(() => {", "  ${1:// Your code}", "}, ${2:1000});"],
     },
     "[ES6] SetInterval": {
-        "prefix": [
-            "setInterval"
-        ],
-        "body": [
-            "setInterval(() => {",
-            "  ${1:// Your code}",
-            "}, ${2:1000});"
-        ]
-    }
+        "prefix": ["setInterval"],
+        "body": ["setInterval(() => {", "  ${1:// Your code}", "}, ${2:1000});"],
+    },
 }
