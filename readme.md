@@ -1,11 +1,7 @@
 <div style="border: 2px solid #000; padding: 16px; border-radius: 8px;">
-<section>
 
 ## 📢 **IMPORTANT**
 
-</section>
-
-<article>
 Starting from <b>Odoo 18</b> , we will align the versioning of our snippets with the respective Odoo version.
 This change is made to help you easily select the appropriate snippets for the version of Odoo you are currently
 using.
@@ -18,10 +14,8 @@ Best regards,
 
 <b>Bùi Đức Tuấn</b>
 
-</article>
-
 <div align="center">
-    <a href="www.linkedin.com/in/buiductuan-dev">
+    <a href="https://www.linkedin.com/in/buiductuan-dev">
         <img src="./assets/images/linkedin.png"
             width="30" height="30" /></a>
     <a href="#">

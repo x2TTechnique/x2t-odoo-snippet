@@ -19,3 +19,4 @@
 | `3.1.0` | `11/12/2024` | Change logo                                                                                                     |
 | `3.1.2` | `11/12/2024` | Fix logo                                                                                                        |
 | `4.0.0` | `31/12/2024` | Add dependencies for snippets `python autopep8 python-debug xml-tool eslint prettier auto-rename auto-closetag` |
+| `4.1.0` | `31/12/2024` | Configuration default for dependencies                                                                          |
