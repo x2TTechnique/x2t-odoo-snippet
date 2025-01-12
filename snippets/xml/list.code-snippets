@@ -1,6 +1,9 @@
 {
     "List view": {
-        "prefix": ["list", "view"],
+        "prefix": [
+            "list",
+            "view"
+        ],
         "body": [
             "<record id=\"view_${1:MODEL_NAME}_tree\" model=\"ir.ui.view\">",
             "    <field name=\"name\">${2:view.name}</field>",
@@ -19,8 +22,17 @@
         ],
         "scope": "xml",
     },
+    "List tag": {
+        "prefix": "list",
+        "body": [
+            "<list></list>"
+        ]
+    },
     "[List] Control button element": {
-        "prefix": ["control", "button"],
+        "prefix": [
+            "control",
+            "button"
+        ],
         "body": [
             "<control>",
             "   <create string=\"Add a item\"/>",
@@ -31,8 +43,15 @@
         "scope": "xml",
     },
     "[List] Groupby element": {
-        "prefix": ["groupby"],
-        "body": ["<groupby name=\"partner_id\">", "   <button type=\"edit\" icon=\"fa-edit\" title=\"Edit\"/>", "   <field name=\"email\"/>", "</groupby>"],
+        "prefix": [
+            "groupby"
+        ],
+        "body": [
+            "<groupby name=\"partner_id\">",
+            "   <button type=\"edit\" icon=\"fa-edit\" title=\"Edit\"/>",
+            "   <field name=\"email\"/>",
+            "</groupby>"
+        ],
         "scope": "xml",
     },
 }

@@ -2,7 +2,12 @@
     "name": "tim-snippets",
     "displayName": "Odoo Development Snippets",
     "description": "Snippets for Odoo and Icons",
-    "version": "4.1.0",
+    "version": "4.2.0",
+    "author": {
+        "name": "[Tim] Bùi Đức Tuấn",
+        "email": "buiductuan.dev@gmail.com",
+        "url": "https://timmodule.tech"
+    },
     "scripts": {},
     "engines": {
         "vscode": "^1.51.0"
@@ -383,10 +388,10 @@
     "extensionDependencies": [
         "esbenp.prettier-vscode",
         "ms-python.python",
+        "ms-python.debugpy",
         "ms-python.autopep8",
         "ms-python.vscode-pylance",
         "mechatroner.rainbow-csv",
-        "ms-python.debugpy",
         "dotjoshjohnson.xml",
         "formulahendry.auto-rename-tag",
         "formulahendry.auto-close-tag"
@@ -394,8 +399,18 @@
     "icon": "assets/brand/icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/buiductuan-dev/snippets.git"
+        "url": "https://github.com/buiductuan-dev/snippets.git",
+        "email": "buiductuan.dev@gmail.com"
     },
+    "bugs": {},
+    "private": true,
+    "contributors": [
+        {
+            "name": "[Tim] Bùi Đức Tuấn",
+            "email": "buiductuan.dev@gmail.com",
+            "url": "https://timmodule.tech"
+        }
+    ],
     "keywords": [
         "odoo",
         "snippets",

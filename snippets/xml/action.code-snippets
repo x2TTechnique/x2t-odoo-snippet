@@ -1,6 +1,9 @@
 {
     "[Action] Window elements": {
-        "prefix": ["action", "window"],
+        "prefix": [
+            "action",
+            "window"
+        ],
         "body": [
             "<record model=\"ir.actions.act_window\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
@@ -9,7 +12,7 @@
             "   <field name=\"domain\">[]</field>",
             "   <field name=\"context\">{}</field>",
             "   <field name=\"search_view_id\" ref=\"${4:MODULE.SEARCH_XML_ID}\"/>",
-            "   <field name=\"view_ids\" eval=\"[(5,0,0),(0,0,{\"view_mode\": \"tree\", \"view_id\": ref(\"MODULE_NAME.VIEW_XML_ID\")})]\"/>",
+            "   <field name=\"view_ids\" eval=\"[(5,0,0),(0,0,{'view_mode': 'tree', 'view_id': ref('MODULE_NAME.VIEW_XML_ID')})]\"/>",
             "   <field name=\"help\" type=\"html\">",
             "       <p class=\"o_view_nocontent_smiling_face\">",
             "           Subtitle",
@@ -23,7 +26,11 @@
         "scope": "xml",
     },
     "[Action] Window view elements": {
-        "prefix": ["action", "view", "window"],
+        "prefix": [
+            "action",
+            "view",
+            "window"
+        ],
         "body": [
             "<record model=\"ir.actions.act_window.view\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"sequence\" eval=\"1\"/>",
@@ -37,7 +44,10 @@
         "scope": "xml",
     },
     "[Action] URL elements": {
-        "prefix": ["action", "url"],
+        "prefix": [
+            "action",
+            "url"
+        ],
         "body": [
             "<record model=\"ir.actions.act_url\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"url\">${1:/web}</field>",
@@ -50,7 +60,10 @@
         "isFileTemplate": false,
     },
     "[Action] Server elements": {
-        "prefix": ["action", "server"],
+        "prefix": [
+            "action",
+            "server"
+        ],
         "body": [
             "<record model=\"ir.actions.sever\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
@@ -64,7 +77,10 @@
         "scope": "xml",
     },
     "[Action] report elements": {
-        "prefix": ["action", "report"],
+        "prefix": [
+            "action",
+            "report"
+        ],
         "body": [
             "<record model=\"ir.actions.report\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
@@ -84,7 +100,10 @@
         "scope": "xml",
     },
     "[Action] Client elements": {
-        "prefix": ["action", "client"],
+        "prefix": [
+            "action",
+            "client"
+        ],
         "body": [
             "<record model=\"ir.actions.client\" id=\"${0:ACTION_NAME_action}\">",
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
@@ -97,7 +116,11 @@
         "scope": "xml",
     },
     "[Action] Cron job elements": {
-        "prefix": ["action", "automated", "cron"],
+        "prefix": [
+            "action",
+            "automated",
+            "cron"
+        ],
         "body": [
             "<record model=\"ir.cron\" id=\"${0:CRON_NAME_cron}\">",
             "   <field name=\"name\">${1:ACTION_NAME}</field>",
