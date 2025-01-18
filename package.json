@@ -1,11 +1,11 @@
 {
-    "name": "tim-snippets",
+    "name": "x2t-snippets",
     "displayName": "Odoo Development Snippets",
     "description": "Snippets for Odoo and Icons",
     "version": "4.2.0",
     "author": {
-        "name": "[Tim] Bùi Đức Tuấn",
-        "email": "buiductuan.dev@gmail.com",
+        "name": "[x2T] x2T Technology",
+        "email": "x2t.technology@gmail.com",
         "url": "https://timmodule.tech"
     },
     "scripts": {},
