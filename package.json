@@ -1,13 +1,14 @@
 {
-    "name": "x2t-snippets",
-    "displayName": "Odoo Development Snippets",
-    "description": "Snippets for Odoo and Icons",
-    "version": "4.2.0",
+    "name": "tim-snippets",
+    "displayName": "Odoo Development Snippet",
+    "description": "Odoo Snippet provides a comprehensive set of snippets for Python, XML, and JavaScript, helping Odoo developers speed up development with predefined code templates.",
+    "version": "4.2.1",
     "author": {
-        "name": "[x2T] x2T Technology",
-        "email": "x2t.technology@gmail.com",
-        "url": "https://timmodule.tech"
+        "name": "Bùi Đức Tuấn",
+        "email": "buiductuan12081995@gmail.com",
+        "url": "https://x2t.tech"
     },
+    "pricing": "Free",
     "scripts": {},
     "engines": {
         "vscode": "^1.51.0"
@@ -399,16 +400,16 @@
     "icon": "assets/brand/icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/buiductuan-dev/snippets.git",
-        "email": "buiductuan.dev@gmail.com"
+        "url": "https://github.com/buiductuan-git/snippets",
+        "email": "buiductuan12081995@gmail.com"
     },
     "bugs": {},
     "private": true,
     "contributors": [
         {
             "name": "[Tim] Bùi Đức Tuấn",
-            "email": "buiductuan.dev@gmail.com",
-            "url": "https://timmodule.tech"
+            "email": "buiductuan12081995@gmail.com",
+            "url": "https://x2t.tech"
         }
     ],
     "keywords": [

@@ -1,6 +1,9 @@
 {
     "[Permission] Module category record elements": {
-        "prefix": ["module", "module-category"],
+        "prefix": [
+            "module",
+            "module-category"
+        ],
         "body": [
             "<record id=\"module_${0:MODULE_NAME_CATEGORY_NAME}\" model=\"ir.module.category\">",
             "   <field name=\"name\">${1:CATEGORY_NAME}</field>",
@@ -11,7 +14,10 @@
         "scope": "xml",
     },
     "[Permission] Group elements": {
-        "prefix": ["group", "record"],
+        "prefix": [
+            "group",
+            "record"
+        ],
         "body": [
             "<record id=\"group_${0:NAME}\" model=\"res.groups\">",
             "   <field name=\"name\"></field>",
@@ -25,7 +31,10 @@
         "scope": "xml",
     },
     "[Permission] Rule elements": {
-        "prefix": ["rule", "record"],
+        "prefix": [
+            "rule",
+            "record"
+        ],
         "body": [
             "<record id=\"rule_${0:NAME}\" model=\"ir.rule\">",
             "   <field name=\"name\"></field>",

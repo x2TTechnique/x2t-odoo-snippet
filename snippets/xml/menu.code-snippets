@@ -1,17 +1,33 @@
 {
     "Menu open & close element": {
-        "prefix": ["menu"],
-        "body": ["<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" web_icon=\"${1:MODULE,static/description/icon.png}\" sequence=\"10\">", "", "</menuitem>"],
+        "prefix": [
+            "menu root"
+        ],
+        "body": [
+            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" web_icon=\"${1:MODULE,static/description/icon.png}\" sequence=\"10\">",
+            "",
+            "</menuitem>"
+        ],
         "scope": "xml",
     },
     "Menu empty element": {
-        "prefix": ["menu"],
-        "body": ["<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" web_icon=\"${1:MODULE,static/description/icon.png}\" sequence=\"10\"/>"],
+        "prefix": [
+            "menu item"
+        ],
+        "body": [
+            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" sequence=\"10\" action=\"\"/>"
+        ],
         "scope": "xml",
     },
     "Submenu open & close element": {
-        "prefix": ["menu", "submenuitem"],
-        "body": ["<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" sequence=\"10\" action=\"\">", "", "</menuitem>"],
+        "prefix": [
+            "menu category",
+        ],
+        "body": [
+            "<menuitem id=\"menu_${0:MODEL_NAME}_item\" name=\"\" sequence=\"10\">",
+            "",
+            "</menuitem>"
+        ],
         "isFileTemplate": false,
         "scope": "xml",
     },

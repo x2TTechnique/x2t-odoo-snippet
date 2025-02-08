@@ -1,6 +1,8 @@
 {
     "Search view": {
-        "prefix": ["search"],
+        "prefix": [
+            "search"
+        ],
         "body": [
             "<record id=\"${0:view_MODEL_NAME_search}\" model=\"ir.ui.view\">",
             "   <field name=\"name\">${1:VIEW_NAME}</field>",
@@ -9,9 +11,9 @@
             "       <search>",
             "           <field name=\"\"/>",
             "           <separator/>",
-            "           <filter name=\"archived\" string=\"Archived\" domain=\"[]\"/>",
+            "           <filter name=\"\" string=\"\" domain=\"[]\"/>",
             "           <searchpanel>",
-            "               <field name=\"office_id\" select=\"multi\" domain=\"[]\" enable_counters=\"1\" icon=\"fa-building\"/>",
+            "               <field name=\"\" select=\"multi\" domain=\"[]\" enable_counters=\"1\" icon=\"fa-\"/>",
             "           </searchpanel>",
             "       </search>",
             "   </field>",
@@ -19,16 +21,26 @@
         ],
         "scope": "xml",
     },
-    "[Search] Filter element": {
-        "prefix": ["filter"],
-        "body": ["<filter name=\"\" string=\"\" domain=\"[]\" filter_domain=\"[]\" context=\"{}\"/>"],
+    "[Search] Filter tag": {
+        "prefix": [
+            "filter"
+        ],
+        "body": [
+            "<filter name=\"\" string=\"\" domain=\"[]\" filter_domain=\"[]\" context=\"{}\"/>"
+        ],
         "description": "Filter in search view",
         "isFileTemplate": false,
         "scope": "xml",
     },
-    "[Search] Searchpanel element": {
-        "prefix": ["searchpanel"],
-        "body": ["<searchpanel>", "   <field name=\"office_id\" select=\"multi\" domain=\"[]\" enable_counters=\"1\" icon=\"fa-building\"/>", "</searchpanel>"],
+    "[Search] Search panel tag": {
+        "prefix": [
+            "searchpanel"
+        ],
+        "body": [
+            "<searchpanel>",
+            "   <field name=\"\" select=\"multi\" domain=\"[]\" enable_counters=\"1\" icon=\"fa-\"/>",
+            "</searchpanel>"
+        ],
         "description": "Searchpanel in search view",
         "isFileTemplate": false,
         "scope": "xml",

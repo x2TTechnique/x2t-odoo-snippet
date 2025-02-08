@@ -1,6 +1,8 @@
 {
     "[__manifest__.py] Manifest file": {
-        "prefix": ["manifest"],
+        "prefix": [
+            "manifest"
+        ],
         "body": [
             "# -*- coding: utf-8 -*-",
             "{",
@@ -11,9 +13,9 @@
             "   \"author\": \"Bùi Đức Tuấn\",",
             "   \"maintainer\": \"Bùi Đức Tuấn\",",
             "   \"license\": \"OPL-1\",",
-            "   \"website\": \"https://xyz.com.vn\",",
-            "   \"category\": \"Tim/Management\",",
-            "   \"version\": \"17.0.1.0.1\",",
+            "   \"website\": \"\",",
+            "   \"category\": \"\",",
+            "   \"version\": \"\",",
             "   \"depends\": [],",
             "   \"installable\": True,",
             "   \"application\": False,",
@@ -55,7 +57,22 @@
         ],
     },
     "[__init__.py] Init file": {
-        "prefix": ["init"],
-        "body": ["# -*- coding: utf-8 -*-", "from . import models", "from . import controllers"],
+        "prefix": [
+            "init"
+        ],
+        "body": [
+            "# -*- coding: utf-8 -*-",
+            "from . import models",
+            "from . import controllers"
+        ],
+    },
+    "UTF-8": {
+        "prefix": [
+            "utf-8",
+            "#"
+        ],
+        "body": [
+            "# -*- coding: utf-8 -*-",
+        ],
     },
 }

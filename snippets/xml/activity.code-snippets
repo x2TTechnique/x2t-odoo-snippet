@@ -1,6 +1,9 @@
 {
     "Activity view": {
-        "prefix": ["activity", "view"],
+        "prefix": [
+            "activity",
+            "view"
+        ],
         "body": [
             "<record id=\"${0:view_MODEL_NAME_calendar}\" model=\"ir.ui.view\">",
             "   <field name=\"name\">${1:VIEW_NAME}</field>",

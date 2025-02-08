@@ -1,6 +1,9 @@
 {
     "Kanban view": {
-        "prefix": ["kanban", "view"],
+        "prefix": [
+            "kanban",
+            "view"
+        ],
         "body": [
             "<record id=\"${0:view_MODEL_NAME_kanban}\" model=\"ir.ui.view\">",
             "   <field name=\"name\">${1:VIEW_NAME}</field>",
