@@ -1,11 +1,11 @@
 {
-    "name": "tim-snippets",
-    "displayName": "Odoo Development Snippet",
+    "name": "odoo-snippet-x2t",
+    "displayName": "Odoo Snippet - X2T Contributors",
     "description": "Odoo Snippet provides a comprehensive set of snippets for Python, XML, and JavaScript, helping Odoo developers speed up development with predefined code templates.",
     "version": "4.2.1",
     "author": {
-        "name": "Bùi Đức Tuấn",
-        "email": "buiductuan12081995@gmail.com",
+        "name": "X2T Contributors",
+        "email": "x2t.technique@gmail.com",
         "url": "https://x2t.tech"
     },
     "pricing": "Free",
@@ -20,7 +20,7 @@
         "Formatters",
         "Linters"
     ],
-    "publisher": "BDT",
+    "publisher": "X2T",
     "contributes": {
         "snippets": [
             {
@@ -387,21 +387,17 @@
         }
     },
     "extensionDependencies": [
-        "esbenp.prettier-vscode",
         "ms-python.python",
         "ms-python.debugpy",
         "ms-python.autopep8",
         "ms-python.vscode-pylance",
-        "mechatroner.rainbow-csv",
-        "dotjoshjohnson.xml",
-        "formulahendry.auto-rename-tag",
-        "formulahendry.auto-close-tag"
+        "mechatroner.rainbow-csv"
     ],
     "icon": "assets/brand/icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/buiductuan-git/snippets",
-        "email": "buiductuan12081995@gmail.com"
+        "url": "https://github.com/x2TTechnique/x2t-odoo-snippet.git",
+        "email": "x2t.technique@gmail.com"
     },
     "bugs": {},
     "private": true,
